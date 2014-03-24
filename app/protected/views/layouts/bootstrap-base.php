@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><title><?php echo CHtml::encode($this->pageTitle); ?></title></title>
+        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,6 +17,31 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>FeeCast</h2>
+                </div>
+                <div class="col-md-5">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search provider by name">
+                      <span class="input-group-addon">@</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                      <ul class="nav navbar-nav navbar-right" role="navigation">
+                        <li><a href="<?php echo $this->createUrl('site/help'); ?>">Help</a></li>
+                        <li><a href="<?php echo $this->createUrl('site/signup'); ?>">Join</a></li>
+                        <li><a href="<?php echo $this->createUrl('site/login'); ?>">Sign in</a></li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+          </div>
+        </header>
+
 
         <!-- Add your site or application content here -->
         <?php echo $content; ?>
