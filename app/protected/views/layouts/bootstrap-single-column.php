@@ -1,6 +1,8 @@
-<h1>here another example begins, but from the view template</h1>
+<?php /* @var $this Controller */ ?>
+<?php $this->beginContent('//layouts/bootstrap-base'); ?>
 
-    <div class="container">
+<h1>Examples in the template, to test bootstrap</h1>
+<div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
@@ -19,10 +21,8 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->
+</div>
+<div id="content">
+    <?php echo $content; ?>
+</div><!-- content -->
+<?php $this->endContent(); ?>
