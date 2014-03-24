@@ -1,0 +1,80 @@
+2014/03/24 22:14:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/about
+---
+2014/03/24 22:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/site/about
+---
+2014/03/24 22:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/site/about
+---
+2014/03/24 22:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/site/about
+---
+2014/03/24 22:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/about
+---
+2014/03/24 22:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/about
+---
+2014/03/24 22:19:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/about
+---
+2014/03/24 22:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('about')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('about')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/site/about
+---
