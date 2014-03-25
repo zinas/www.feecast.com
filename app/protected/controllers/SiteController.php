@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+	var $layout = '//layouts/bootstrap-with-sidebar';
 	/**
 	 * Declares class-based actions.
 	 */
@@ -27,7 +28,20 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->layout = '//layouts/bootstrap-single-column';
 		$this->render('index');
+	}
+
+	public function actionSignup()
+	{
+		$this->layout = '//layouts/bootstrap-single-column-container';
+		$this->render('signup');
+	}
+
+	public function actionLogin()
+	{
+		$this->layout = '//layouts/bootstrap-single-column-container';
+		$this->render('login');
 	}
 
 	/**
