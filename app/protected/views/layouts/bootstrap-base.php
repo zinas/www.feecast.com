@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
         <!-- <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-theme.css"> -->
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/typeahead.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -142,6 +143,8 @@
         <script>window.jQuery || document.write('<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/typeahead.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

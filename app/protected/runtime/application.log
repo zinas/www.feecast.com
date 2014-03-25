@@ -248,3 +248,30 @@ Stack trace:
 REQUEST_URI=/www.feecast.com/app/index.php/site/page?view=media
 HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/page?view=blog
 ---
+2014/03/25 22:52:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/typeahead.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('js/typeahead.js')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/js/typeahead.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/25 22:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/typeahead.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('js/typeahead.js')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/js/typeahead.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/25 22:53:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/typeahead.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('js/typeahead.js')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/js/typeahead.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
