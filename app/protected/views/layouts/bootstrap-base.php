@@ -145,7 +145,6 @@
 
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/typeahead.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

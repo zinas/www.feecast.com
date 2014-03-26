@@ -341,3 +341,21 @@ Stack trace:
 REQUEST_URI=/www.feecast.com/app/index.php/site/stubs/cpt-codes.json
 HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/page?view=careers
 ---
+2014/03/26 20:22:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "0".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('0')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/0
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/26 20:24:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "0".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('0')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/0
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
