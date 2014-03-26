@@ -1,0 +1,66 @@
+[
+  {
+    "ID":1,
+    "Specialty":"Orthopedic Surgery"
+  },
+  {
+    "ID":2,
+    "Specialty":"Hand Surgery"
+  },
+  {
+    "ID":3,
+    "Specialty":"Gastroenterology"
+  },
+  {
+    "ID":4,
+    "Specialty":"Pain Management"
+  },
+  {
+    "ID":5,
+    "Specialty":"Urology"
+  },
+  {
+    "ID":6,
+    "Specialty":"Gynecology"
+  },
+  {
+    "ID":7,
+    "Specialty":"Spine Surgery"
+  },
+  {
+    "ID":8,
+    "Specialty":"Ophthalmology"
+  },
+  {
+    "ID":9,
+    "Specialty":"General Surgery"
+  },
+  {
+    "ID":10,
+    "Specialty":"Plastic Surgery"
+  },
+  {
+    "ID":11,
+    "Specialty":"Otolaryngology (ENT)"
+  },
+  {
+    "ID":12,
+    "Specialty":"Oral Surgery"
+  },
+  {
+    "ID":13,
+    "Specialty":"Cardiology (pacemakers only)"
+  },
+  {
+    "ID":14,
+    "Specialty":"Bariatric Surgery (weight loss surgery)"
+  },
+  {
+    "ID":15,
+    "Specialty":"Podiatry"
+  },
+  {
+    "ID":16,
+    "Specialty":"Vascular Surgery "
+  }
+]

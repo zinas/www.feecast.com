@@ -44,4 +44,47 @@ $('#search-location').typeahead({
   displayKey: 'value',
   source: substringMatcher(states)
 });
+
+var providersEngine = new Bloodhound({
+  name: 'providersEngine',
+  prefetch: {url: 'stubs/insurance-list.json'},
+  datumTokenizer: function(d) {
+    return Bloodhound.tokenizers.whitespace(d.CompanyName);
+  },
+  queryTokenizer:Bloodhound.tokenizers.whitespace
+});
+providersEngine.initialize(true);
+
+$('#search-provider').typeahead({
+  minLength: 2
+}, {
+  source: providersEngine.ttAdapter(),
+  displayKey: function (suggestion) {
+    return suggestion.CompanyName;
+  }
+});
+
+$.get('stubs/cpt-codes.json', function (data) {
+    var cptEngine = new Bloodhound({
+      name: 'cptEngine',
+      local: data,
+      datumTokenizer: function(d) {
+        return Bloodhound.tokenizers.whitespace(d.CPT_LONG_DESCRIPTION + ' ' + d.CPT_SHORT_DESCRIPTION);
+      },
+      queryTokenizer:Bloodhound.tokenizers.whitespace
+    });
+    cptEngine.initialize(true);
+
+    $('#search-need').typeahead({
+      minLength: 3
+    }, {
+      source: cptEngine.ttAdapter(),
+      displayKey: function (suggestion) {
+        return suggestion.CPT_SHORT_DESCRIPTION;
+      }
+    });
+});
+
+
+
 })(jQuery);
