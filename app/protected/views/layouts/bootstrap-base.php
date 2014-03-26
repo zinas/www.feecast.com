@@ -35,8 +35,8 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li class="<?php echo $_GET['view']=='about'?'active':'';?>"><a href="<?php echo Yii::app()->createUrl('site/page', array('view'=>'about')) ?>">About us</a></li>
-                  <li class="<?php echo $_GET['view']=='contact'?'active':'';?>"><a href="<?php echo Yii::app()->createUrl('site/page', array('view'=>'contact')) ?>">Contact</a></li>
+                  <li class="<?php echo Yii::app()->request->getQuery('view')=='about'?'active':'';?>"><a href="<?php echo Yii::app()->createUrl('site/page', array('view'=>'about')) ?>">About us</a></li>
+                  <li class="<?php echo Yii::app()->request->getQuery('view')=='contact'?'active':'';?>"><a href="<?php echo Yii::app()->createUrl('site/page', array('view'=>'contact')) ?>">Contact</a></li>
                   <!-- <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -91,7 +91,7 @@
                   <li>GitHub<li>
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact & support</a></li>
+                  <li><a href="#">Contact &amp; support</a></li>
                   <li><a href="#">Enterprise</a></li>
                   <li><a href="#">Site status</a></li>
                 </ul>
