@@ -69,7 +69,7 @@ $.get('stubs/cpt-codes.json', function (data) {
       name: 'cptEngine',
       local: data,
       datumTokenizer: function(d) {
-        return Bloodhound.tokenizers.whitespace(d.CPT_LONG_DESCRIPTION + ' ' + d.CPT_SHORT_DESCRIPTION);
+        return Bloodhound.tokenizers.whitespace(d.CPT_CODE + ' ' + d.CPT_LONG_DESCRIPTION + ' ' + d.CPT_SHORT_DESCRIPTION);
       },
       queryTokenizer:Bloodhound.tokenizers.whitespace
     });
@@ -84,7 +84,5 @@ $.get('stubs/cpt-codes.json', function (data) {
       }
     });
 });
-
-
 
 })(jQuery);
