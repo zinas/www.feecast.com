@@ -4,7 +4,35 @@
 
 .signup-form .form-control { margin-bottom: 10px; }
 
+.body-image {
+  background: url(../images/body.png) 0 0 no-repeat;
+  width: 100%;
+  background-size: contain;
 
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+.search-fees .darkblue-panel {min-height: 270px;}
+
+.theme {color: #48bcb4}
+.search-fees h4 {margin-top: 5px; margin-left: 40px; margin-bottom: 30px;}
+.search-fees h2 i {margin-right: 5px;}
+
+.search-fees .tasks-widget { margin-top: 20px;}
+
+.search-fees .form-panel.with-header {
+  margin-top: 0;
+}
+
+.search-fees .form-panel h3 {margin-top: 0;}
+
+.search-fees .form-panel.with-header h5 {text-align: center;}
+
+.form-panel .white-header {
+  background: #f3f3f3;
+  padding: 3px;
+  margin-bottom: 15px;
+}
 /**** LOGIN FORM ****/
 @import url(http://weloveiconfonts.com/api/?family=brandico|entypo|openwebicons|zocial);
 

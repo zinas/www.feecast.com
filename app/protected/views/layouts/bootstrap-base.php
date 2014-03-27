@@ -10,10 +10,12 @@
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome/css/font-awesome.css" />
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style-responsive.css">
 
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/to-do.css">
 
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
@@ -147,10 +149,28 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nicescroll.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.tagsinput.js"></script>
+
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.9.2.custom.min.js"></script>
+
 
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/typeahead.js"></script>
 
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/common-scripts.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-switch.js"></script>
+
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-daterangepicker/date.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+        <script type="text/javascript" src="assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/form-component.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

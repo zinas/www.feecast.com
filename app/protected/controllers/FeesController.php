@@ -10,9 +10,4 @@ class FeesController extends Controller
         $this->render('search');
     }
 
-    public function actionList() {
-        $fees = Fee::model()->findAll();
-        $this->render('search', array('myfees' => $fees));
-    }
-
 }
