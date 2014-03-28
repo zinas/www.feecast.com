@@ -10,15 +10,20 @@ class UserIdentity extends CUserIdentity
 	private $patID;
     public function authenticate()
     {
-        $record=Patient::model()->findByAttributes(array('username'=>$this->username));
+        $record=Patient::model()->findByAttributes(array('patLogin'=>$this->username));
+
         if($record===null)
             $this->errorCode=self::ERROR_USERNAME_INVALID;
-        else if($record->password!==$this->password)
+        else if($record->patPwd!==$this->password)
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         else
         {
             $this->patID=$record->patID;
             $this->setState('fullname', $record->fullname);
+            $this->setState('email', $record->patEmail);
+            $this->setState('username', $record->patLogin);
+            $this->setState('firstName', $record->patName);
+            $this->setState('lastName', $record->patFamName);
             $this->errorCode=self::ERROR_NONE;
         }
         return !$this->errorCode;

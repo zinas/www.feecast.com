@@ -23,8 +23,13 @@
               </div>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo Yii::app()->createUrl('site/page?view=help') ?>">Help</a></li>
-                <li><a href="<?php echo Yii::app()->createUrl('site/signup') ?>">Sign up</a></li>
-                <li><a data-toggle="modal" href="#login-form-modal">Login</a></li>
+                <?php if (Yii::app()->user->id) {?>
+                  <li><a href="#"><?php echo Yii::app()->user->firstName?></a></li>
+                  <li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">Logout</a></li>
+                <?php } else { ?>
+                  <li><a href="<?php echo Yii::app()->createUrl('site/signup') ?>">Sign up</a></li>
+                  <li><a data-toggle="modal" href="#login-form-modal">Login</a></li>
+                <?php } ?>
               </ul>
             </div>
           </nav>

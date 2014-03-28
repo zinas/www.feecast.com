@@ -40,8 +40,19 @@ class SiteController extends Controller
 
 	public function actionLogin()
 	{
-		$this->layout = '//layouts/bootstrap-single-column-container';
-		$this->render('login');
+		$identity=new UserIdentity(Yii::app()->request->getPost('username'),Yii::app()->request->getPost('password'));
+		$identity->authenticate();
+		if($identity->authenticate()) {
+		    Yii::app()->user->login($identity);
+		    $this->redirect(Yii::app()->user->returnUrl);
+		} else {
+		    echo 'Wrong username or password';
+		}
+	}
+
+	public function actionLogout() {
+		Yii::app()->user->logout();
+		$this->redirect(array('site/index'));
 	}
 
 	/**

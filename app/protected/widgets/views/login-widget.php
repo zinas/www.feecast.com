@@ -2,12 +2,12 @@
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
 <div id="login-page">
-<form class="form-login" action="index.html">
+<form class="form-login" method="POST" action="<?php echo Yii::app()->createUrl('site/login') ?>">
   <h2 class="form-login-heading">sign in now</h2>
   <div class="login-wrap">
-      <input type="text" class="form-control" placeholder="User ID" autofocus>
+      <input type="text" class="form-control" name="username" placeholder="username" autofocus>
       <br>
-      <input type="password" class="form-control" placeholder="Password">
+      <input type="password" class="form-control" name="password" placeholder="password">
       <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
           <span class="pull-right">
@@ -15,7 +15,7 @@
 
           </span>
       </label>
-      <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+      <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
       <hr>
 
       <div class="login-social-link centered">
