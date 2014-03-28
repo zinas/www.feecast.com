@@ -3146,3 +3146,421 @@ Stack trace:
 REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
 HTTP_REFERER=http://localhost/www.feecast.com/app/
 ---
+2014/03/28 20:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:43:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:44:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/login
+---
+2014/03/28 20:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js?_=1396035880623
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js?_=1396035928725
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:47:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:47:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js?_=1396036063016
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:48:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:48:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js?_=1396036083165
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:50:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:50:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:50:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:50:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:50:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('pages')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('pages')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/pages')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/pages?view=help
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/pages?view=help
+---
+2014/03/28 20:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('pages')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('pages')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/pages')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/pages?view=help
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/pages?view=help
+---
+2014/03/28 20:52:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/page?view=help
+---
+2014/03/28 20:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/signup
+---
+2014/03/28 20:52:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/28 20:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/signup
+---
+2014/03/28 20:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/signup
+---
+2014/03/28 20:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/signup
+---
+2014/03/28 20:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\xampp\htdocs\www.feecast.com\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CController.php(270): CController->missingAction('assets')
+#1 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(282): CController->run('assets')
+#2 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('site/assets/js/...')
+#3 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/www.feecast.com/app/index.php/site/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/site/page?view=help
+---
+2014/03/28 20:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/js/boots...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---

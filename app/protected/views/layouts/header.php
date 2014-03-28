@@ -22,10 +22,11 @@
                 </form>
               </div>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo Yii::app()->createUrl('site/signup') ?>">Help</a></li>
+                <li><a href="<?php echo Yii::app()->createUrl('site/page?view=help') ?>">Help</a></li>
                 <li><a href="<?php echo Yii::app()->createUrl('site/signup') ?>">Sign up</a></li>
-                <li><a href="<?php echo Yii::app()->createUrl('site/login') ?>">Login</a></li>
+                <li><a data-toggle="modal" href="#login-form-modal">Login</a></li>
               </ul>
             </div>
           </nav>
+          <?php $this->widget('application.widgets.LoginWidget'); ?>
         </header>
