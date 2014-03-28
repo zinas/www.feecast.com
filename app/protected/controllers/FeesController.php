@@ -10,4 +10,11 @@ class FeesController extends Controller
         $this->render('search');
     }
 
+    public function actionList() {
+        $fees = Center::model()->stubFeesList;
+        $this->render('list', array(
+            'fees' => $fees,
+            'extended' => true
+        ));
+    }
 }

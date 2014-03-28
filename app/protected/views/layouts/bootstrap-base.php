@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style-responsive.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/table-responsive.css">
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/to-do.css">
 
@@ -51,7 +52,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-daterangepicker/date.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-        <script type="text/javascript" src="assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
 
 
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/form-component.js"></script>

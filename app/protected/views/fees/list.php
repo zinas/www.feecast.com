@@ -1,0 +1,1 @@
+<?php $this->widget('application.widgets.FeesListWidget', array('extended' => $extended, 'fees' => $fees)); ?>
