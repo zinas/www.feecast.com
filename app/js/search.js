@@ -76,11 +76,21 @@ $.get('stubs/cpt-codes.json', function (data) {
     cptEngine.initialize(true);
 
     $('#search-need').typeahead({
-      minLength: 3
+      highlight: true
     }, {
       source: cptEngine.ttAdapter(),
       displayKey: function (suggestion) {
-        return suggestion.CPT_SHORT_DESCRIPTION;
+        return suggestion.CPT_SHORT_DESCRIPTION + ' (' + suggestion.CPT_CODE + ')';
+      },
+      templates: {
+        suggestion : function (suggestion) {
+          tpl =
+            '<div class="tt-single-suggestion">'+
+                '<div class="tt-main">'+suggestion.CPT_SHORT_DESCRIPTION + ' (' + suggestion.CPT_CODE + ')</div>'+
+                '<div class="tt-secondary">'+suggestion.CPT_LONG_DESCRIPTION + '</div>'+
+            '</div>';
+          return tpl;
+        }
       }
     });
 });
