@@ -65,13 +65,14 @@ $('#search-provider').typeahead({
 });
 
 if (localStorage.getItem('cptCodes')) {
-  var codes = eval('('+localStorage.getItem('cptCodes')+')');
+  var codes = $.parseJSON(localStorage.getItem('cptCodes'));
+  console.log('Codes are: ', codes);
   initCptSearch(codes);
 } else {
   $.get('stubs/cpt-codes.json', function (data) {
     initCptSearch(data);
     localStorage.setItem('cptCodes', JSON.stringify(data));
-  });
+  }, "json");
 }
 
 function initCptSearch(data) {
@@ -84,7 +85,6 @@ function initCptSearch(data) {
     queryTokenizer:Bloodhound.tokenizers.whitespace
   });
   cptEngine.initialize(true);
-
   $('#search-need').typeahead({
     highlight: true
   }, {
