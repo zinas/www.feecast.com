@@ -44,7 +44,7 @@ class SiteController extends Controller
 		$identity->authenticate();
 		if($identity->authenticate()) {
 		    Yii::app()->user->login($identity);
-		    $this->redirect(Yii::app()->user->returnUrl);
+		    $this->redirect(Yii::app()->request->urlReferrer);
 		} else {
 		    echo 'Wrong username or password';
 		}

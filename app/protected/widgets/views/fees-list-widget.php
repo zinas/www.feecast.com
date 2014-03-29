@@ -32,10 +32,22 @@
                     <td data-title="Physician"><?php echo $fee['physician']?></td>
                 <?php } ?>
                     <td data-title="Location"><?php echo $fee['location']?></td>
-                    <td data-title="Insured Price"><?php echo $fee['insuredPrice']?></td>
+                    <td data-title="Insured Price">
+                        <?php if (Yii::app()->user->id) { ?>
+                            <?php echo $fee['insuredPrice']?>
+                        <?php } else { ?>
+                            <a href="<?php echo Yii::app()->createUrl('fees/insuranceInfo') ?>">Enter insurance info</a> or <a data-toggle="modal" href="#login-form-modal">login</a> to view
+                        <?php } ?>
+                    </td>
                     <td data-title="Cash Price"><?php echo $fee['cashPrice']?></td>
                 <?php if ($extended===true) { ?>
-                    <td data-title="Your Price"><?php echo $fee['userPrice']?></td>
+                    <td data-title="Your Price">
+                        <?php if (Yii::app()->user->id) { ?>
+                            <?php echo $fee['userPrice']?>
+                        <?php } else { ?>
+                            <a href="<?php echo Yii::app()->createUrl('fees/insuranceInfo') ?>">Enter insurance info</a> or <a data-toggle="modal" href="#login-form-modal">login</a> to view
+                        <?php } ?>
+                    </td>
                 <?php } ?>
                     <td data-title=""><button type="button" class="btn btn-default">Details</button></td>
                 <?php if ($extended===true) { ?>

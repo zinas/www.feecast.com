@@ -5,9 +5,9 @@ class FeesController extends Controller
     var $layout = '//layouts/bootstrap-single-column-container';
 
 
-    public function actionSearch()
+    public function actionInsuranceInfo()
     {
-        $this->render('search');
+        $this->render('insurance-info');
     }
 
     public function actionList() {
