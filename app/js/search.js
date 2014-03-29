@@ -44,7 +44,7 @@ function initCptSearch(data) {
 
 $('.body-point').on('click', function () {
   var form = $(
-    '<form method="post" action="'+baseUrl+'/fees/list">'+
+    '<form method="post" action="'+$(this).data('url')+'">'+
       '<input type="text" name="search-need" value="'+$(this).data('cpt')+'">'+
     '</form>'
   );
