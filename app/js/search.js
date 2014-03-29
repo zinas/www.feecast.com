@@ -42,4 +42,14 @@ function initCptSearch(data) {
   $('#search-need').attr("placeholder", "Enter keyword or CPT code to descibe need (e.g. Colonoscopy or 44388)");
 }
 
+$('.body-point').on('click', function () {
+  var form = $(
+    '<form method="post" action="'+baseUrl+'/fees/list">'+
+      '<input type="text" name="search-need" value="'+$(this).data('cpt')+'">'+
+    '</form>'
+  );
+
+  form.submit();
+});
+
 })(jQuery);
