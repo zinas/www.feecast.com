@@ -24,8 +24,20 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo Yii::app()->createUrl('site/page?view=help') ?>">Help</a></li>
                 <?php if (Yii::app()->user->id) {?>
-                  <li><a href="#"><?php echo Yii::app()->user->firstName?></a></li>
-                  <li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">Logout</a></li>
+                  <li>
+                    <!-- <a href="#"><?php echo Yii::app()->user->firstName?></a> -->
+
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo Yii::app()->user->firstName?><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="#">My appointments</a></li>
+                      <li><a href="#">My reviews</a></li>
+                      <li><a href="#">Profile</a></li>
+                      <li class="divider"></li>
+                      <li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">Logout</a></li>
+                    </ul>
+                  </li>
+                  <li></li>
                 <?php } else { ?>
                   <li><a href="<?php echo Yii::app()->createUrl('site/signup') ?>">Sign up</a></li>
                   <li><a data-toggle="modal" href="#login-form-modal">Login</a></li>
