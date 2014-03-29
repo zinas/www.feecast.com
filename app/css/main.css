@@ -61,3 +61,35 @@
 
 #header-main .navbar-brand {font-size: 24px;}
 #header-main .navbar-brand small {font-size: 12px; display: block; margin-top: -2px;}
+
+.left-inner-addon,
+.left-inner-addon-lg {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.left-inner-addon-lg input {
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.left-inner-addon i,
+.left-inner-addon-lg i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+    color: #48bcb4;
+    z-index: 1;
+}
+
+.left-inner-addon-lg i {
+  padding: 11px 12px;
+  font-size: 24px;
+   box-sizing: border-box;
+
+}
+
+.content-panel .adv-table {margin: 10px;}
+#no-more-tables h2 {margin-left: 10px;}

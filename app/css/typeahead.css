@@ -30,12 +30,9 @@
   text-align: left;
 }
 
-.tt-suggestion:hover {
+.tt-suggestion.tt-cursor {
   background-color: #4ECDC4 !important;
   cursor: pointer;
-}
-
-.tt-suggestion:hover {
   color: #fff;
 }
 

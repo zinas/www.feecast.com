@@ -1,4 +1,9 @@
-<div id="no-more-tables" class="content-panel" style="padding: 5px;">
+<div id="no-more-tables" class="content-panel">
+    <?php if (isset($need)) { ?>
+        <h2>Fee details</h2>
+        <h4 class="theme"><?php echo $need ?></h4>
+        <br>
+    <?php } ?>
     <div class="adv-table">
         <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-condensed cf" id="fees-list">
             <thead class="cf">
@@ -34,7 +39,7 @@
                 <?php } ?>
                     <td data-title=""><button type="button" class="btn btn-default">Details</button></td>
                 <?php if ($extended===true) { ?>
-                    <td data-title=""><button type="button" class="btn btn-primary">Request an appointment</button></td>
+                    <td data-title=""><button type="button" class="btn btn-theme">Request an appointment</button></td>
                 <?php } ?>
                 </tr>
             <?php } ?>

@@ -4,6 +4,7 @@ class FeesListWidget extends CWidget
 {
     public $fees = array();
     public $extended = true;
+    public $need = null;
 
     public function init()
     {
@@ -15,6 +16,10 @@ class FeesListWidget extends CWidget
 
     public function run()
     {
-        $this->render('fees-list-widget', array('extended' => $this->extended, 'fees' => $this->fees));
+        $this->render('fees-list-widget', array(
+            'extended' => $this->extended,
+            'fees' => $this->fees,
+            'need' => $this->need
+        ));
     }
 }
