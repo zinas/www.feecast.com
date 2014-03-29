@@ -4477,3 +4477,66 @@ Stack trace:
 REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
 HTTP_REFERER=http://localhost/www.feecast.com/app/index.php/fees/list
 ---
+2014/03/29 08:36:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/29 08:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/29 08:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/29 08:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/29 08:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/29 08:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---
+2014/03/29 08:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\www.feecast.com\yii\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\xampp\htdocs\www.feecast.com\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.feecast.com\app\index.php(23): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.feecast.com/app/css/bootstrap.css.map
+HTTP_REFERER=http://localhost/www.feecast.com/app/
+---

@@ -64,35 +64,46 @@ $('#search-provider').typeahead({
   }
 });
 
-$.get('stubs/cpt-codes.json', function (data) {
-    var cptEngine = new Bloodhound({
-      name: 'cptEngine',
-      local: data,
-      datumTokenizer: function(d) {
-        return Bloodhound.tokenizers.whitespace(d.CPT_CODE + ' ' + d.CPT_LONG_DESCRIPTION + ' ' + d.CPT_SHORT_DESCRIPTION);
-      },
-      queryTokenizer:Bloodhound.tokenizers.whitespace
-    });
-    cptEngine.initialize(true);
+if (localStorage.getItem('cptCodes')) {
+  var codes = eval('('+localStorage.getItem('cptCodes')+')');
+  initCptSearch(codes);
+} else {
+  $.get('stubs/cpt-codes.json', function (data) {
+    initCptSearch(data);
+    localStorage.setItem('cptCodes', JSON.stringify(data));
+  });
+}
 
-    $('#search-need').typeahead({
-      highlight: true
-    }, {
-      source: cptEngine.ttAdapter(),
-      displayKey: function (suggestion) {
-        return suggestion.CPT_SHORT_DESCRIPTION + ' (' + suggestion.CPT_CODE + ')';
-      },
-      templates: {
-        suggestion : function (suggestion) {
-          tpl =
-            '<div class="tt-single-suggestion">'+
-                '<div class="tt-main">'+suggestion.CPT_SHORT_DESCRIPTION + ' (' + suggestion.CPT_CODE + ')</div>'+
-                '<div class="tt-secondary">'+suggestion.CPT_LONG_DESCRIPTION + '</div>'+
-            '</div>';
-          return tpl;
-        }
+function initCptSearch(data) {
+  var cptEngine = new Bloodhound({
+    name: 'cptEngine',
+    local: data,
+    datumTokenizer: function(d) {
+      return Bloodhound.tokenizers.whitespace(d.CPT_CODE + ' ' + d.CPT_LONG_DESCRIPTION + ' ' + d.CPT_SHORT_DESCRIPTION);
+    },
+    queryTokenizer:Bloodhound.tokenizers.whitespace
+  });
+  cptEngine.initialize(true);
+
+  $('#search-need').typeahead({
+    highlight: true
+  }, {
+    source: cptEngine.ttAdapter(),
+    displayKey: function (suggestion) {
+      return suggestion.CPT_SHORT_DESCRIPTION + ' (' + suggestion.CPT_CODE + ')';
+    },
+    templates: {
+      suggestion : function (suggestion) {
+        tpl =
+          '<div class="tt-single-suggestion">'+
+              '<div class="tt-main">'+suggestion.CPT_SHORT_DESCRIPTION + ' (' + suggestion.CPT_CODE + ')</div>'+
+              '<div class="tt-secondary">'+suggestion.CPT_LONG_DESCRIPTION + '</div>'+
+          '</div>';
+        return tpl;
       }
-    });
-});
+    }
+  });
+  $('#search-need').attr("placeholder", "Enter keyword or CPT code to descibe need (e.g. Colonoscopy or 44388)");
+}
 
 })(jQuery);
