@@ -51,5 +51,6 @@ $('.body-point').on('click', function () {
 
   form.submit();
 });
+$('.body-point').tooltip();
 
 })(jQuery);

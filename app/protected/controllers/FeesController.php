@@ -11,10 +11,21 @@ class FeesController extends Controller
     }
 
     public function actionList() {
+        $searchTerms = $this->__getSearchTerms();
+
         $fees = Center::model()->stubFeesList;
         $this->render('list', array(
             'fees' => $fees,
-            'extended' => true
+            'extended' => true,
+            'terms' => $searchTerms
         ));
+    }
+
+    private function __getSearchTerms() {
+        if (isset($_POST['search-need'])) {
+            Yii::app()->session['terms'] = $_POST;
+        }
+
+        return Yii::app()->session['terms'];
     }
 }

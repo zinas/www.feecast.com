@@ -3,8 +3,7 @@
 class FeesListWidget extends CWidget
 {
     public $fees = array();
-    public $extended = true;
-    public $need = null;
+    public $terms = array();
 
     public function init()
     {
@@ -17,9 +16,9 @@ class FeesListWidget extends CWidget
     public function run()
     {
         $this->render('fees-list-widget', array(
-            'extended' => $this->extended,
+            'hasInsuranceInfo' => Yii::app()->user->getHasInsuranceInfo(),
             'fees' => $this->fees,
-            'need' => $this->need
+            'need' => $this->terms['search-need']
         ));
     }
 }

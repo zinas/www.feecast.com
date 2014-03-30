@@ -2,9 +2,8 @@
 <div class="row">
     <div class="col-sm-9">
         <?php $this->widget('application.widgets.FeesListWidget', array(
-            'extended' => $extended,
             'fees' => $fees,
-            'need' => Yii::app()->request->getPost('search-need')
+            'terms' => $terms
 
         )); ?>
     </div>

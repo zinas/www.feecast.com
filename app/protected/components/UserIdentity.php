@@ -24,6 +24,7 @@ class UserIdentity extends CUserIdentity
             $this->setState('username', $record->patLogin);
             $this->setState('firstName', $record->patName);
             $this->setState('lastName', $record->patFamName);
+            $this->setState('patient', $record);
             $this->errorCode=self::ERROR_NONE;
         }
         return !$this->errorCode;
