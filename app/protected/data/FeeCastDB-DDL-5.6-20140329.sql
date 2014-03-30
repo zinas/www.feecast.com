@@ -146,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `feecastdb`.`center_phys` (
   PRIMARY KEY (`id`),
   INDEX `center_idx` (`center` ASC),
   INDEX `CENTPHYS_physician` (`physician` ASC),
-  UNIQUE INDEX `centphys_uniq` (),
+  UNIQUE INDEX `centphys_uniq` (`center` ASC, `physician` ASC),
   CONSTRAINT `CENTPHYS_physician`
     FOREIGN KEY (`physician`)
     REFERENCES `feecastdb`.`physician` (`id`)
