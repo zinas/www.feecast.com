@@ -141,7 +141,9 @@ DROP TABLE IF EXISTS `feecastdb`.`ins_provider` ;
 
 CREATE TABLE IF NOT EXISTS `feecastdb`.`ins_provider` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `insName` VARCHAR(45) NULL DEFAULT NULL,
+  `insName` VARCHAR(45) NOT NULL,
+  `insNote` VARCHAR(45) NULL DEFAULT NULL,
+  `insLogo` VARCHAR(128) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 

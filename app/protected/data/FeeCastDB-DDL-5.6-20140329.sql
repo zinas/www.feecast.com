@@ -73,7 +73,8 @@ DROP TABLE IF EXISTS `feecastdb`.`specialty` ;
 
 CREATE TABLE IF NOT EXISTS `feecastdb`.`specialty` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `specName` VARCHAR(45) NULL DEFAULT NULL,
+  `specName` VARCHAR(45) NOT NULL,
+  `specNote` VARCHAR(45) NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `specName_UNIQUE` (`specName` ASC),
   UNIQUE INDEX `specID_UNIQUE` (`id` ASC))
@@ -167,7 +168,9 @@ DROP TABLE IF EXISTS `feecastdb`.`ins_provider` ;
 
 CREATE TABLE IF NOT EXISTS `feecastdb`.`ins_provider` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `insName` VARCHAR(45) NULL DEFAULT NULL,
+  `insName` VARCHAR(45) NOT NULL,
+  `insNote` VARCHAR(45) NULL DEFAULT NULL,
+  `insLogo` VARCHAR(128) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
