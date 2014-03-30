@@ -18,7 +18,7 @@ class Patient extends ActiveRecord {
      * @return boolean
      */
     public function getHasInsuranceInfo() {
-        return true;
+        return false;
     }
 }
 ?>

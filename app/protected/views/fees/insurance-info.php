@@ -1,3 +1,4 @@
+<form method="POST" action="">
 <div class="search-fees">
     <h2><i class="fa fa-medkit theme"></i>Tell us your needs. We are here to help you.</h2>
     <h4>Healthcare provider fees at your fingertips.</h4>
@@ -5,20 +6,12 @@
         <div class="col-sm-8">
             <div class="form-panel with-header">
                 <h3>Your procedure</h3>
-                <input class="form-control input-lg" type="text" name="search-need" placeholder="Describe your need or enter a CPT code">
+                <input class="form-control input-lg" type="text" name="search-need" id="search-need" placeholder="Describe your need or enter a CPT code">
 
                 <div class="tasks-widget">
                     <div id="selected-needs" class="task-content">
                         <ul class="task-list ui-sortable">
-                            <li class="list-primary">
-                                <div class="task-title">
-                                    <span class="task-title-sp">Short descript of need</span>
-                                    <span class="badge bg-info">100100</span>
-                                    <div class="pull-right hidden-phone">
-                                        <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                    </div>
-                                </div>
-                            </li>
+
                             <li class="list-primary">
                                 <div class="task-title">
                                     <span class="task-title-sp">Short descript of need</span>
@@ -35,7 +28,7 @@
                 <input class="form-control input-lg" type="text" name="search-doctor" placeholder="Your doctor (optional)">
 
                 <div class="tasks-widget">
-                    <div id="selected-needs" class="task-content">
+                    <div id="selected-doctors" class="task-content">
                         <ul class="task-list ui-sortable">
                             <li class="list-warning">
                                 <div class="task-title">
@@ -122,3 +115,5 @@
 
 
 </div>
+</form>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . "/js/insuranceInfo.js", CClientScript::POS_END); ?>

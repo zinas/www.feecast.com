@@ -32,6 +32,9 @@ return array(
 
 	// application components
 	'components'=>array(
+		'searchState'=>array(
+			'class' => 'SearchState',
+		),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

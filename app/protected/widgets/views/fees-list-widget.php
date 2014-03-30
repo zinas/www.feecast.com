@@ -44,7 +44,12 @@
                         <?php if ($hasInsuranceInfo) { ?>
                             <?php echo $fee['userPrice']?>
                         <?php } else { ?>
-                            <a href="<?php echo Yii::app()->createUrl('fees/insuranceInfo') ?>">Enter insurance info</a> <p style="margin:0; padding: 0;">or</p> <a data-toggle="modal" href="#login-form-modal">login</a>
+                            <a href="<?php echo Yii::app()->createUrl('fees/insuranceInfo') ?>">
+                                Enter insurance info
+                            </a>
+                            <?php if (Yii::app()->user->isGuest) { ?>
+                                <p style="margin:0; padding: 0;">or</p> <a data-toggle="modal" href="#login-form-modal">login</a>
+                            <?php } ?>
                         <?php } ?>
                     </td>
                     <td data-title=""><button type="button" class="btn btn-default">Details</button></td>
