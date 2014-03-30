@@ -11,16 +11,22 @@
                 <div class="tasks-widget">
                     <div id="selected-needs" class="task-content">
                         <ul class="task-list ui-sortable">
-
+                            <?php foreach (Yii::app()->searchState->terms['search-needs'] as $need) { ?>
+                            <?php
+                                preg_match('#\((.*?)\)#', $need, $match);
+                                $needTitle = str_replace(" ".$match[0],"",$need);
+                            ?>
                             <li class="list-primary">
                                 <div class="task-title">
-                                    <span class="task-title-sp">Short descript of need</span>
-                                    <span class="badge bg-info">100100</span>
+                                    <span class="task-title-sp"><?php echo $needTitle ?></span>
+                                    <input type="hidden" name="search-needs[]" value="<?php echo $need ?>">
+                                    <span class="badge bg-info"><?php echo $match[1] ?></span>
                                     <div class="pull-right hidden-phone">
                                         <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
                                     </div>
                                 </div>
                             </li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -30,14 +36,7 @@
                 <div class="tasks-widget">
                     <div id="selected-doctors" class="task-content">
                         <ul class="task-list ui-sortable">
-                            <li class="list-warning">
-                                <div class="task-title">
-                                    <span class="task-title-sp">Nikos Zinas</span>
-                                    <div class="pull-right hidden-phone">
-                                        <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -108,11 +107,11 @@
         <div class="col-sm-8">
             <div class="form-panel with-header">
                 <p style="text-align: center;">By selecting “Submit Your Request” you are agreeing to the FeeCast <a href="#">Terms and Conditions</a></p>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Submit Your Request</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Your Request</button>
             </div>
         </div>
     </div>
-
+</form>
 
 </div>
 </form>

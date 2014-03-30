@@ -1,4 +1,5 @@
 <?php $this->widget('application.widgets.SearchTripleWidget'); ?>
+
 <div class="row">
     <div class="col-sm-9">
         <?php $this->widget('application.widgets.FeesListWidget', array(
@@ -8,7 +9,32 @@
         )); ?>
     </div>
     <div class="col-sm-3">
-        <div class="darkblue-panel pn">
+
+        <div class="detailed mt">
+            <h4>Compare vs.</h4>
+            <div class="recent-activity">
+                <div class="activity-icon bg-theme"><i class="fa fa-trophy"></i></div>
+                <div class="activity-panel">
+                    <h5>Recommended Price</h5>
+                    <p>$4,500</p>
+                </div>
+
+                <div class="activity-icon bg-theme02"><i class="fa fa-hospital-o"></i></div>
+                <div class="activity-panel">
+                    <h5>Hospitals</h5>
+                    <p>$7,500 - $21,500</p>
+                </div>
+
+                <div class="activity-icon bg-theme04"><i class="fa fa-ambulance"></i></div>
+                <div class="activity-panel">
+                    <h5>Providers in other areas</h5>
+                    <p>$2,000 - $2,700</p>
+                </div>
+            </div>
+        </div>
+
+
+<!--         <div class="darkblue-panel pn">
             <div class="darkblue-header">
                 <h5>Compare</h5>
             </div>
@@ -33,4 +59,4 @@
                 </div>
             </footer>
         </div>
-    </div>
+ -->    </div>

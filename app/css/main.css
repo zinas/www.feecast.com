@@ -1,3 +1,13 @@
+.nav-wrapper {
+  background: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.nav-wrapper .navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+
 .homepage {
   background: #ebefef url(../images/healthcare.jpg) 0 0 no-repeat;
   background-size: contain;
@@ -5,11 +15,12 @@
 
 .homepage .jumbotron {
   background: none;
+  padding-top: 30px;
 }
 
 .main-search-form .pn {height: auto; max-width: 720px; margin: 0 auto;}
 .main-search-form .search-text {width: 80%; margin: 0 auto;}
-.main-search-form h3 {margin-bottom: 20px}
+.main-search-form h3 {margin: 10px 0;}
 .main-search-form  {text-align: center;}
 .main-search-form img {
   height: 250px;
@@ -38,6 +49,7 @@
 .search-fees .darkblue-panel {min-height: 270px;}
 
 .theme {color: #48bcb4}
+.theme-prominent {color: #ed9c28; font-weight: bold;}
 .search-fees h4 {margin-top: 5px; margin-left: 40px; margin-bottom: 30px;}
 .search-fees h2 i {margin-right: 5px;}
 
@@ -80,7 +92,7 @@
     position: absolute;
     padding: 10px 12px;
     pointer-events: none;
-    color: #48bcb4;
+    color: #ed9c28;
     z-index: 1;
 }
 
@@ -92,7 +104,19 @@
 }
 
 .content-panel .adv-table {margin: 10px;}
+.adv-table tr:hover .invisible {visibility: visible;}
+#no-more-tables tr, #no-more-tables td {cursor: pointer; vertical-align: middle; position: relative;}
 #no-more-tables h2 {margin-left: 10px;}
+/*#no-more-tables tr:hover .price-info {visibility: hidden;}*/
+#no-more-tables .call-to-action {
+  visibility: hidden;
+  font-size: 20px;
+  display: block;
+}
+#no-more-tables tr:hover .call-to-action {
+  visibility: visible;
+}
+
 
 .body-map {
   position: relative;
@@ -117,30 +141,30 @@
   transition:opacity 0.5s, transform 0.5s;
 }
 
-.body-point-1 { top: 85px; left: 145px; }
-.body-point-2 { top: 100px; left: 111px; }
-.body-point-3 { top: 100px; left: 130px; }
-.body-point-4 { top: 145px; left: 120px; }
-.body-point-5 { top: 165px; left: 130px; }
-.body-point-6 { top: 165px; left: 110px; }
-.body-point-7 { top: 205px; left: 133px; }
-.body-point-8 { top: 265px; left: 105px; }
-.body-point-9 { top: 75px; left: 238px; }
-.body-point-10 { top: 115px; left: 238px; }
-.body-point-11 { top: 128px; left: 204px; }
-.body-point-12 { top: 160px; left: 225px; }
-.body-point-13 { top: 164px; left: 284px; }
-.body-point-14 { top: 258px; left: 223px; }
-.body-point-15 { top: 125px; left: 335px; }
-.body-point-16 { top: 100px; left: 355px; }
-.body-point-17 { top: 116px; left: 387px; }
-.body-point-18 { top: 172px; left: 389px; }
-.body-point-19 { top: 240px; left: 350px; }
-.body-point-20 { top: 240px; left: 420px; }
-.body-point-21 { top: 240px; left: 440px; }
-.body-point-22 { top: 260px; left: 350px; }
-.body-point-23 { top: 260px; left: 420px; }
-.body-point-24 { top: 260px; left: 440px; }
+.body-point-1 { top: 75px; left: 145px; }
+.body-point-2 { top: 90px; left: 111px; }
+.body-point-3 { top: 90px; left: 130px; }
+.body-point-4 { top: 135px; left: 120px; }
+.body-point-5 { top: 155px; left: 130px; }
+.body-point-6 { top: 155px; left: 110px; }
+.body-point-7 { top: 195px; left: 133px; }
+.body-point-8 { top: 255px; left: 105px; }
+.body-point-9 { top: 65px; left: 238px; }
+.body-point-10 { top: 105px; left: 238px; }
+.body-point-11 { top: 118px; left: 204px; }
+.body-point-12 { top: 150px; left: 225px; }
+.body-point-13 { top: 154px; left: 284px; }
+.body-point-14 { top: 248px; left: 223px; }
+.body-point-15 { top: 115px; left: 335px; }
+.body-point-16 { top: 90px; left: 355px; }
+.body-point-17 { top: 106px; left: 387px; }
+.body-point-18 { top: 162px; left: 389px; }
+.body-point-19 { top: 230px; left: 350px; }
+.body-point-20 { top: 230px; left: 420px; }
+.body-point-21 { top: 230px; left: 440px; }
+.body-point-22 { top: 250px; left: 350px; }
+.body-point-23 { top: 250px; left: 420px; }
+.body-point-24 { top: 250px; left: 440px; }
 
 .body-point:hover {
   -webkit-transform: scale(1.3, 1.3);

@@ -7,7 +7,11 @@ class FeesController extends Controller
 
     public function actionInsuranceInfo()
     {
-        $this->render('insurance-info');
+        if ($_POST) {
+            //$this->redirect(array('fees/list'));
+        } else {
+            $this->render('insurance-info');
+        }
     }
 
     public function actionList() {

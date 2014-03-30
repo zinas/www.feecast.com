@@ -1,11 +1,11 @@
 <?php
 class SearchState extends CApplicationComponent {
     private $_terms = array();
-    private $_termKeys = array('search-need', 'search-provider', 'search-location');
+    private $_termKeys = array('search-need', 'search-provider', 'search-location', 'search-needs');
 
     public function init() {
         $this->_terms = isset(Yii::app()->session['terms'])?Yii::app()->session['terms']:array();
-        if (Yii::app()->request->getPost('search-need')) {
+        if (Yii::app()->request->getPost('search-needs')) {
             Yii::app()->session['terms'] = $this->_buildTermsFromPost();
             $this->_terms = Yii::app()->session['terms'];
 

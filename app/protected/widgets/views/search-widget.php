@@ -2,10 +2,10 @@
     <div class="form-group">
         <div class="left-inner-addon-lg ">
             <i class="fa fa-medkit"></i>
-            <input type="text" class="form-control input-lg" id="search-need" name="search-need" placeholder="Loading data, please wait...">
+            <input type="text" class="form-control input-lg" id="search-need" name="search-needs[]" placeholder="Loading data, please wait...">
         </div>
     </div>
     <div class="form-group">
-        <button class="btn-theme btn-lg btn">Search</button>
+        <button class="btn-warning btn-lg btn">Search</button>
     </div>
 </form>

@@ -1,3 +1,5 @@
+         <div class="nav-wrapper">
+         <div class="container">
          <header id="header-main">
           <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
@@ -11,10 +13,10 @@
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="col-sm-3 col-md-3">
+              <div class="col-sm-6">
                 <form class="navbar-form" role="search">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <input type="text" class="form-control" placeholder="Search by name" name="q">
                     <div class="input-group-btn">
                       <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
@@ -47,3 +49,5 @@
           </nav>
           <?php $this->widget('application.widgets.LoginWidget'); ?>
         </header>
+      </div>
+    </div>

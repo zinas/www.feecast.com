@@ -35,7 +35,7 @@ $('#search-location').typeahead({
 
 var providersEngine = new Bloodhound({
   name: 'providersEngine',
-  prefetch: {url: 'stubs/insurance-list.json'},
+  prefetch: {url: baseUrl+'/stubs/insurance-list.json'},
   datumTokenizer: function(d) {
     return Bloodhound.tokenizers.whitespace(d.CompanyName);
   },
@@ -58,7 +58,7 @@ if (localStorage.getItem('cptCodes')) {
   var codes = eval('('+localStorage.getItem('cptCodes')+')');
   initCptSearch(codes);
 } else {
-  $.get('stubs/cpt-codes.json', function (data) {
+  $.get(baseUrl+'/stubs/cpt-codes.json', function (data) {
     initCptSearch(data);
     localStorage.setItem('cptCodes', JSON.stringify(data));
   });

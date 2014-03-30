@@ -18,7 +18,7 @@ class FeesListWidget extends CWidget
         $this->render('fees-list-widget', array(
             'hasInsuranceInfo' => Yii::app()->user->getHasInsuranceInfo(),
             'fees' => $this->fees,
-            'need' => $this->terms['search-need']
+            'need' => implode('<br>', $this->terms['search-needs'])
         ));
     }
 }
