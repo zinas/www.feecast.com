@@ -455,6 +455,7 @@ INSERT INTO `ins_provider` VALUES (1,'Blue Cross','',''),(2,'United Health Care 
 /*!40000 ALTER TABLE `ins_provider` ENABLE KEYS */;
 UNLOCK TABLES;
 
+
 --
 -- Table structure for table `patient`
 --
@@ -476,7 +477,7 @@ CREATE TABLE `patient` (
   `patPolicyNum` varchar(15) DEFAULT NULL,
   `patGender` int(2) NULL DEFAULT 3,
   `patDOB` timestamp NULL,
-  `patCreateTime` timestamp NULL,
+  `patCreateTime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `fcbHandle` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `patientLogin_UNIQUE` (`patLogin`),
@@ -494,7 +495,7 @@ CREATE TABLE `patient` (
 
 LOCK TABLES `patient` WRITE;
 /*!40000 ALTER TABLE `patient` DISABLE KEYS */;
-INSERT INTO `patient` VALUES (1,'ippo','dio','Ippokratis','Pandis','A','ippokratis@gmail.com',1,1,94301,'W21321','2014-03-30 07:00:01',''),(2,'kristina','123','Kristina','Serafim','','kristinaserafim@gmail.com',1,2,94301,'W21324','2014-03-30 07:00:02',''),(3,'nikos','123','Nikos','Zinas','','zinas.nikos@gmail.com',1,1,95123,'W21325','2014-03-30 07:00:03',''),(4,'greg','123','Greg','Horner','','greg@feecast.com',1,1,91234,'W21326','2014-03-30 07:00:05',''),(5,'john','123','John','Doe','','jd@feecast.com',2,4,15312,'W21320','2014-03-30 07:00:06','');
+INSERT INTO `patient` VALUES (1,'ippo','dio','Ippokratis','Pandis','A','ippokratis@gmail.com',1,1,94301,'W21321',0,'1979-31-10 00:00:00','2014-03-30 07:00:01',''),(2,'kristina','123','Kristina','Serafim','','kristinaserafim@gmail.com',1,2,94301,'W21324',1,'1975-31-03 00:00:00','2014-03-30 07:00:02',''),(3,'nikos','123','Nikos','Zinas','','zinas.nikos@gmail.com',1,1,95123,'W21325',0,'','2014-03-30 07:00:03',''),(4,'greg','123','Greg','Horner','','greg@feecast.com',1,1,91234,'W21326',0,'','2014-03-30 07:00:05',''),(5,'john','123','John','Doe','','jd@feecast.com',2,4,15312,'W21320',3,'','2014-03-30 07:00:06','');
 /*!40000 ALTER TABLE `patient` ENABLE KEYS */;
 UNLOCK TABLES;
 
