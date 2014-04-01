@@ -1,7 +1,9 @@
 <?php
 class SearchState extends CApplicationComponent {
     private $_terms = array();
-    private $_termKeys = array('search-need', 'search-provider', 'search-location', 'search-needs');
+
+    // add the keys you want to save to session
+    private $_termKeys = array();
 
     public function init() {
         $this->_terms = isset(Yii::app()->session['terms'])?Yii::app()->session['terms']:array();

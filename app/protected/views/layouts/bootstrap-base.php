@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/table-responsive.css">
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/to-do.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/slider.css">
 
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
@@ -51,11 +52,13 @@
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-daterangepicker/date.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-slider.js"></script>
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
 
 
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/form-component.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

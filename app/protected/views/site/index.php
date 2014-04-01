@@ -5,9 +5,9 @@
             <h3>Click an area of the body to see treatment prices</h3>
             <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/body.png" />
 
-            <div data-toggle="tooltip" title="Shoulder" class="body-point body-point-1" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
-            <div data-toggle="tooltip" title="Breast" class="body-point body-point-2" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
-            <div data-toggle="tooltip" title="Cardiovascular" class="body-point body-point-3" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
+            <div data-toggle="tooltip" title="Shoulder" class="body-point body-point-1" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="RELEASE SHOULDER JOINT (23020)"></div>
+            <div data-toggle="tooltip" title="Breast" class="body-point body-point-2" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="DRAINAGE OF BREAST LESION (19000)"></div>
+            <div data-toggle="tooltip" title="Cardiovascular" class="body-point body-point-3" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="CARDIOVASCULAR NUCLEAR EXAM (78499)"></div>
             <div data-toggle="tooltip" title="Gynecology" class="body-point body-point-4" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
             <div data-toggle="tooltip" title="Hernia - Includes Mesh" class="body-point body-point-5" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
             <div data-toggle="tooltip" title="Urology" class="body-point body-point-6" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>

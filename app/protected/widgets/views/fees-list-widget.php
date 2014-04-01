@@ -46,9 +46,7 @@
                         <?php if ($hasInsuranceInfo) { ?>
                             <?php echo $fee['userPrice']?>
                         <?php } else { ?>
-                            <a href="<?php echo Yii::app()->createUrl('fees/insuranceInfo') ?>">
-                                Enter insurance info
-                            </a>
+                            <a data-toggle="modal" href="#insurance-info-modal">Enter insurance info</a>
                             <?php if (Yii::app()->user->isGuest) { ?>
                                 <p style="margin:0; padding: 0;">or</p> <a data-toggle="modal" href="#login-form-modal">login</a>
                             <?php } ?>
@@ -63,4 +61,47 @@
             </tbody>
         </table>
     </div>
+</div>
+
+<div class="modal fade login-modal " id="insurance-info-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+<div id="login-page">
+<form class="form-login" method="POST" action="<?php echo Yii::app()->createUrl('site/login') ?>">
+  <h2 class="form-login-heading">fill in your insurance info</h2>
+  <div class="login-wrap">
+        <label>choose insurance carrier</label>
+      <input type="text" class="form-control" name="username" placeholder="username" autofocus>
+      <br>
+      <input type="password" class="form-control" name="password" placeholder="password">
+      <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+          <span class="pull-right">
+              <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+
+          </span>
+      </label>
+      <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+      <hr>
+
+      <div class="login-social-link centered">
+      <p>or you can sign in via your social network</p>
+          <button class="btn btn-facebook" type="submit"><i class="fa fa-facebook"></i> Facebook</button>
+          <button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button>
+      </div>
+      <div class="registration">
+          Don't have an account yet?<br/>
+          <a class="" href="<?php echo Yii::app()->createUrl('site/signup') ?>">
+              Create an account
+          </a>
+      </div>
+
+  </div>
+
+</form>
+</div>
+
+
+    </div>
+  </div>
 </div>

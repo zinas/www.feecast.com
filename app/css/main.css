@@ -1,12 +1,3 @@
-.nav-wrapper {
-  background: #f8f8f8;
-  margin-bottom: 20px;
-}
-
-.nav-wrapper .navbar {
-  margin-bottom: 0;
-  border: 0;
-}
 
 .homepage {
   background: #ebefef url(../images/healthcare.jpg) 0 0 no-repeat;
@@ -48,8 +39,7 @@
 }
 .search-fees .darkblue-panel {min-height: 270px;}
 
-.theme {color: #48bcb4}
-.theme-prominent {color: #ed9c28; font-weight: bold;}
+
 .search-fees h4 {margin-top: 5px; margin-left: 40px; margin-bottom: 30px;}
 .search-fees h2 i {margin-right: 5px;}
 
@@ -71,8 +61,25 @@
   margin-bottom: 15px;
 }
 
-#header-main .navbar-brand {font-size: 24px;}
-#header-main .navbar-brand small {font-size: 12px; display: block; margin-top: -2px;}
+#header-main .navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+  background: url(../images/logo2.png) 0 50% no-repeat;
+  background-size: contain;
+  padding-left: 45px;
+}
+
+.nav-wrapper {
+  background: #f8f8f8;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.nav-wrapper .navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+
 
 .left-inner-addon,
 .left-inner-addon-lg {
@@ -104,17 +111,40 @@
 }
 
 .content-panel .adv-table {margin: 10px;}
-.adv-table tr:hover .invisible {visibility: visible;}
-#no-more-tables tr, #no-more-tables td {cursor: pointer; vertical-align: middle; position: relative;}
-#no-more-tables h2 {margin-left: 10px;}
-/*#no-more-tables tr:hover .price-info {visibility: hidden;}*/
-#no-more-tables .call-to-action {
-  visibility: hidden;
-  font-size: 20px;
+#fees-list tr,
+#fees-list td {
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+}
+#fees-list h2 {margin-left: 10px;}
+#fees-list .call-to-action,
+#fees-list .rev-call-to-action {
+  display: none;
+}
+#fees-list .opened:hover .call-to-action {
+  display: none !important;
+}
+#fees-list .opened .rev-call-to-action {
   display: block;
 }
-#no-more-tables tr:hover .call-to-action {
-  visibility: visible;
+#fees-list tr:hover .call-to-action {
+  display: block;
+}
+
+#fees-list td {border: 0;}
+#fees-list .odd,
+#fees-list .even {
+  border-top: 1px solid #ddd;
+}
+
+#fees-list .odd:hover,
+#fees-list .even:hover {
+  background: #fafafa;
+}
+#fees-list .details {
+  cursor: auto;
+  padding-left: 80px;
 }
 
 
@@ -175,3 +205,17 @@
   -webkit-transition:opacity 0.5s, -webkit-transform 0.5s;
   transition:opacity 0.5s, transform 0.5s;
 }
+
+
+.activity-panel {margin-bottom: 10px; text-align: left; padding-left: 10px; padding-right: 5px;}
+.activity-panel i {width: 60px; text-align: right;}
+.activity-panel h5 {margin-top: 7px;}
+
+
+.theme {color: #48bcb4}
+.theme-2 {color: #ac92ec;}
+.theme-3 {color: #ed5565;}
+.theme-4 {color: #ed9c28;}
+.theme-prominent {color: #ed9c28; font-weight: bold;}
+
+

@@ -19,7 +19,7 @@ class FeesController extends Controller
 
         $this->render('list', array(
             'fees' => $fees,
-            'terms' => Yii::app()->searchState->terms
+            'term' => Yii::app()->request->getParam('search-need')
         ));
     }
 }

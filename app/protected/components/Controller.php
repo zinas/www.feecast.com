@@ -11,10 +11,4 @@ class Controller extends CController
 	 */
 	public $layout='//layouts/bootstrap-single-column';
 
-	protected function beforeAction($action) {
-		// implicit call of searchState->init()
-		Yii::app()->searchState;
-
-		return true;
-	}
 }
