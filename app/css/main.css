@@ -132,10 +132,24 @@
   display: block;
 }
 
+#fees-list .opened {
+-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
 #fees-list td {border: 0;}
 #fees-list .odd,
 #fees-list .even {
   border-top: 1px solid #ddd;
+}
+
+.fees-filters .slider.slider-horizontal .slider-handle {
+  background: #428bca;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -3px;
 }
 
 #fees-list .odd:hover,
@@ -144,8 +158,10 @@
 }
 #fees-list .details {
   cursor: auto;
-  padding-left: 80px;
 }
+
+#fees-list .details .row {margin-left: 80px;}
+
 
 
 .body-map {
@@ -218,4 +234,15 @@
 .theme-4 {color: #ed9c28;}
 .theme-prominent {color: #ed9c28; font-weight: bold;}
 
+.hoverable:hover {
+  background: #f3f3f3;
+}
 
+.search-fees-title {
+  margin-left: 25px;
+  margin-top: -15px;
+}
+
+.search-fees-title h4 {
+  margin-left: 0;
+}

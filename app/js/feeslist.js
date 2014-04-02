@@ -8,10 +8,16 @@
     });
 
     var doctors =
+        '<div class="hoverable">'+
         '<div class="row">'+
-            '<div class="col-sm-3"><strong>Dr. Nikos</strong></div>'+
-            '<div class="col-sm-4"><span class="theme-prominent">$100</span></div>'+
-        '</div>';
+          '<div class="col-sm-4 radio">'+
+            '<label>'+
+              '<input type="radio" name="optionsRadios" value="option1" checked>'+
+              '<strong>&nbsp;&nbsp;Dr. Nikos</strong>'+
+            '</label>'+
+          '</div>'+
+            '<div class="col-sm-2"><span class="theme-prominent">$100</span></div>'+
+        '</div></div>';
 
         $('#fees-list').on('click', 'tbody tr', function () {
               var nTr = $(this)[0];
@@ -28,7 +34,12 @@
                   oTable.fnOpen( nTr, doctors + doctors + doctors, 'details' );
               }
           } );
-
+        // $('#fees-list').on('click', 'tbody tr [data-toggle="modal"]', function (e) {
+        //     e.stopPropagation();
+        //     $(this).modal('open')
+        // });
 
     $('.my-slider').slider();
+    $('.contact').on('click', function (event) { event.stopPropagation(); });
+
 })(jQuery);
