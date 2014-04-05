@@ -7,7 +7,8 @@
  */
 class UserIdentity extends CUserIdentity
 {
-	private $patID;
+    private $_id;
+
     public function authenticate()
     {
         $record=Patient::model()->findByAttributes(array('patLogin'=>$this->username));
@@ -18,7 +19,7 @@ class UserIdentity extends CUserIdentity
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         else
         {
-            $this->patID=$record->patID;
+            $this->_id=$record->id;
             $this->setState('fullname', $record->fullname);
             $this->setState('email', $record->patEmail);
             $this->setState('username', $record->patLogin);
@@ -32,6 +33,6 @@ class UserIdentity extends CUserIdentity
 
     public function getId()
     {
-        return $this->patID;
+        return $this->_id;
     }
 }
