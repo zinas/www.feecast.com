@@ -1,0 +1,67 @@
+acupuncturists,99,medical,Acupuncture,Acupuncturist,Acupuncturists,Specializes in ancient alternative therapy via needles.
+addiction-specialists,99,medical,Addiction Medicine,Addiction Specialist,Addiction Specialists,Specializes in the treatment of addiction disorders.
+allergists,99,medical,Allergy & Immunology,Allergist,Allergists,Specializes in treatment of allergies and the immune system.
+alternative-medicine-practitioners,99,medical,Alternative Medicine & Other,Alternative Medicine Practitioner,Alternative Medicine Practitioners,Specializes in alternative treatments and therapies.
+anesthesiologists,99,medical,Anesthesiology,Anesthesiologist,Anesthesiologists,Specializes in managing pain and anesthesia in surgeries.
+mental-health-therapists,99,medical,Behavioral and Mental Health,Mental Health Therapist,Mental Health Therapists,Specializes in behavioral health counseling services.
+cardiothoracic-surgeons,99,medical,Cardiothoracic Surgery,Cardiothoracic Surgeon,Cardiothoracic Surgeons,Specializes in chest and heart surgery.
+cardiologists,99,medical,Cardiovascular Disease,Cardiologist,Cardiologists,Specializes in heart problems.
+childrens-doctors,99,medical,Children's Doctor,Children's Doctor,Children's Doctors,Specializes in the health of children from birth to young adulthood.
+chiropractors,99,medical,Chiropractics,Chiropractor,Chiropractors,"Specializes in alternartive therapy of muscles, bones, and joints."
+geneticists,99,medical,Clinical Genetics,Geneticist,Geneticists,Specializes in the diagnoses of and counselling for genetic disorders.
+colorectal-surgeons,99,medical,Colon & Rectal Surgery,Colorectal Surgeon,Colorectal Surgeons,Specializes in colon and rectal surgery.
+counselors,99,medical,Counseling,Counselor,Counselors,Specializes in behavioral health service counseling.
+critical-care-doctors,99,medical,Critical Care Medicine,Critical Care Doctor,Critical Care Doctors,Specializes in the care of critically ill patients.
+dentists,4,dental,Dentistry,Dentist,Dentists,Specializes in teeth and oral health.
+dermatologists,6,medical,Dermatology,Dermatologist,Dermatologists,"Specializes in skin disorders, including moles and melanoma."
+dietitians,99,medical,"Dietitian, Registered",Dietitian,Dietitians,Specializes in alternative food and nutrition therapies.
+emergency-medicine-doctors,99,medical,Emergency Medicine,Emergence Medicine Doctor,Emergence Medicine Doctors,Specializes in immediate emergency care.
+endocrinologists,99,medical,"Endocrinology, Diabetes & Metabolism",Endocrinologist,Endocrinologists,"Specializes in diabetes, thyroid and other disorders affected by hormones."
+eye-doctors,5,vision,Eye Doctor,Eye Doctor,Eye Doctors,Specializes in your vision and eyes.
+gastroenterologists,99,medical,Gastroenterology,Gastroenterologist,Gastroenterologists,Specializes in the digestive system.
+geriatric-medicine-doctors,99,medical,Geriatric Medicine,Geriatric Medicine Doctor,Geriatric Medicine Doctors,Specializes in the aging process and elderly.
+oncologists,99,medical,Hematology & Oncology,Oncologist,Oncologists,Specializes in the diagnosis and treatment of cancer and tumors.
+hepatologists,99,medical,Hepatology,Hepatologist,Hepatologists,Specializes in liver and spleen diseases.
+hospice-care-palliative-doctors,99,medical,Hospice and Palliative Medicine,Hospice Care and Palliative Doctor,Hospice Care and Palliative Doctors,Specializes in preventing and relieving suffering of dying patients.
+hospitalists,99,medical,Hospitalist,Hospitalist,Hospitalists,Specializes in general medical care of hospitalized patients.
+infectious-disease-doctors,99,medical,Infectious Disease,Infectious Disease Doctor,Infectious Disease Doctors,Specializes in infectious diseases of all types and in all organ systems.
+massage-therapists,99,medical,Massage Therapy,Massage Therapist,Massage Therapists,Specializes in alternative therapy of muscles and tissue.
+naturopathic-doctors,99,medical,Naturopath,Naturopathic Doctor,Naturopathic Doctors,Specializes in alternative natural healing.
+nephrologists,99,medical,Nephrology,Nephrologist,Nephrologists,Specializes in patients with kidney disorders.
+neurosurgeons,99,medical,Neurological Surgery,Neurosurgeon,Neurosurgeons,Specializes in nervous system and brain surgery.
+neurologists,99,medical,Neurology,Neurologist,Neurologists,Specializes in the brain and nervous system.
+neuromusculoskeletal-medicine-doctors,99,medical,Neuromusculoskeletal Medicine,Neuromusculoskeletal Medicine Doctor,Neuromusculoskeletal Medicine Doctors,Specializes in holistic physical therapy to treat illnesses.
+nuclear-medicine-doctors,99,medical,Nuclear Medicine,Nuclear Medicine Doctor,Nuclear Medicine Doctors,Specializes in diagnosing and treating diseases with radioactive materials.
+nurse-practitioners,99,medical,Nurse Practitioner,Nurse Practitoner,Nurse Practitoners,Specializes in your and your family's health.
+nutritionists,99,medical,Nutrition Medicine,Nutritionist,Nutritionists,Specializes in alternative food and nutrition therapies.
+obgyns,3,medical,OBGYN,OBGYN,OBGYNs,Specializes in the care of the female reproductive system.
+ophthalmologists,99,vision,Ophthalmology,Ophthalmologist,Ophthalmologists,"Specializes in vision, eye care, and eye surgery including Lasik."
+optometrists,99,vision,Optometry,Optometrist,Optometrists,Specializes in vision and prescribing glasses and contact lences.
+oral-surgeons,99,medical,Oral & Maxillofacial Surgery,Oral Surgeon,Oral Surgeons,"Specializes in surgical operations of the mouth, jaw and face."
+orthopedic-surgeons,7,medical,Orthopedic Surgery,Orthopedic Surgeon,Orthopedic Surgeons,"Specializes in surgery and treatment of musculoskeletal problems, including knees and spine."
+ear-nose-throat-doctors,99,medical,Otolaryngology,"Ear, Nose and Throat Doctor","Ear, Nose and Throat Doctors","Specializes in ear, nose and throat problems."
+pain-management-doctors,99,medical,Pain Medicine,Pain Management Doctor,Pain Management Doctors,Specializes in pain management and prevention.
+pathologists,99,medical,Pathology,Pathologist,Pathologists,Specializes in laboratory tests of tissue and bodily fluids.
+pediatric-surgeons,99,medical,Pediatric Surgery,Pediatric Surgeon,Pediatric Surgeons,Specializes in complicated surgical conditions in children.
+pediatricians,2,medical,Pediatrics,Pediatrician,Pediatricians,Specializes in the health of children from birth to young adulthood.
+physiatrists,99,medical,Physical Medicine & Rehabilitation,Physiatrist,Physiatrists,Specializes in treating patients with physical disabilities.
+physical-therapists,99,medical,Physical Therapy,Physical Therapist,Physical Therapists,Specializes in physical therapy.
+plastic-surgeons,99,medical,Plastic and Reconstructive Surgery,Plastic Surgeon,Plastic Surgeons,Specializes in plastic and reconstructive surgery.
+podiatrists,99,medical,Podiatry,Podiatrist,Podiatrists,Specializes in foot and ankle problems.
+preventive-medicine-doctors,99,medical,Preventive Medicine,Preventive Medicine Doctor,Preventive Medicine Doctors,Specializes in preventive care.
+primary-care-doctors,1,medical,Primary Care Doctor,Primary Care Doctor,Primary Care Doctors,Specializes in the total health of you and your family.
+psychiatrists,8,medical,Psychiatry,Psychiatrist,Psychiatrists,Specializes in the diagnosis and treatment of mental disorders.
+psychologists,99,medical,Psychology,Psychologist,Psychologists,Specializes in psychological counceling and therapy.
+pulmonologists,99,medical,Pulmonary Disease,Pulmonologist,Pulmonologists,Specializes in lungs and airways.
+radiologists,99,medical,Radiology,Radiologist,Radiologists,Specializes in imaging via X-rays and ultrasound.
+rheumatologists,99,medical,Rheumatology,Rheumatologist,Rheumatologists,"Specializes in joints, muscles, bones and tendons."
+sleep-medicine-doctors,99,medical,Sleep Medicine,Sleep Medicine Doctor,Sleep Medicine Doctors,Specializes in  sleep disorders.
+specialist-doctors,99,medical,Specialist Doctor,Specialist Doctor,Specialist Doctors,Specialize in specific medical areas.
+speech-therapists,99,medical,Speech Therapy,Speech Therapist,Speech Therapists,Specializes in speech therapy.
+sports-medicine-doctors,99,medical,Sports Medicine,Sports Medicine Doctor,Sports Medicine Doctors,Specializes in prevention and treatment of sports related injuries.
+general-surgeons,99,medical,Surgery,General Surgeon,General Surgeons,Specializes in complex surgical operations.
+urologists,99,medical,Urology,Urologist,Urologists,Specializes in genital and urinary problems.
+vascular-surgeons,99,medical,Vascular Surgery,Vascular Surgeon,Vascular Surgeons,Specializes in blood vessel surgery excluding the heart.
+hand-surgeons,99,medical,Hand Surgery,Hand Surgeon, Hand Surgeons,Specializes in hand surgeries.
+obg,99,medical,Gynecology,Gynecologist,Gynecologists,Specializes is gynecological issues.
+bariatric,99,medical,Bariatric Surgery,Bariatric Surgeon,Bariatric Surgeons,Specialized in weight loss surgery.

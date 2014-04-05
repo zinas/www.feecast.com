@@ -29,28 +29,24 @@ except MySQLdb.Error, e:
 # Counting the number of entries 
 cnt = 1
 
-# Insert plan statement
-insertPlanStmt = ("INSERT INTO ins_plan (id, insurance, planName, planDesc, planLogo) VALUES (%s, %s, %s, %s, %s)")
+# Insert specialty statement
+insertSpecStmt = ("INSERT INTO specialty (id, category, specName, specActor, specPlural, specNote) VALUES (%s, %s, %s, %s, %s, %s)")
 
 # Open and read csv file
 with open(cname,"r") as datfile:
 	csvr = csv.reader(datfile, delimiter=',')
 	try:
-    		print "ID UID Provider Name Note"
+    		print "ID Category Name Actor Plural Desc"
        		for row in csvr:
-       			if len(row) == 4:
-       				print cnt, '|', row[0], '|', row[1], '|', row[2], '|', row[3]
-
-				# Get the id of a provider with the specified logo
-				getProviderStmt = "SELECT id FROM ins_provider AS p WHERE p.insLogo LIKE '%s'" % row[1]
-				#print 'Querying provider: ', getProviderStmt
-				cursor.execute(getProviderStmt)
-				ins = cursor.fetchone()
-       				dataPlan = (cnt,ins[0],row[2],row[3],row[0])
-				print cnt,ins[0],row[2],row[3],row[0]
-       				cursor.execute(insertPlanStmt,dataPlan)
-
-        		cnt = cnt + 1
+                    # uid,index,category,name,actor,actors,description
+                    cat = 0
+                    if row[2] != 'medical':
+                        cat = 1
+                    print cnt, '|', row[2], '|', row[3], '|', row[4], '|', row[5], '|', row[6]
+                    dataSpec = (cnt,cat,row[3],row[4],row[5],row[6])
+                    cursor.execute(insertSpecStmt,dataSpec)
+                    
+                    cnt = cnt + 1
 	except csv.Error as e:
         	sys.exit('file %s, line %d: %s' % (rname, resultReader.line_num, e))
 
