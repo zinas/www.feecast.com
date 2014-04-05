@@ -1,0 +1,74 @@
+aetna-choiceposii,aetna,Choice POS II,medical
+aetna-choiceppo,aetna,Choice PPO,medical
+aetna-dentalppo,aetna,Dental PPO,dental
+aetna-hmo,aetna,HMO,medical
+anthem-5199employeeelect,anthem,51-99 Employee Elect,medical
+anthem-advantagehmo,anthem,Advantage HMO,medical
+anthem-blueaccessppo,anthem,Blue Access PPO,medical
+anthem-bluecardppo,anthem,Blue Card PPO,medical
+anthem-bluecrosshmocaliforniacare,anthem,Blue Cross HMO (CaliforniaCare),medical
+anthem-bluecrossposhmonetwork,anthem,Blue Cross POS - HMO Network,medical
+anthem-bluecrossppoprudentbuyer,anthem,Blue Cross PPO (Prudent Buyer),medical
+anthem-bluepreferredhmo,anthem,Blue Preferred HMO,medical
+anthem-bluepreferredpluspos,anthem,Blue Preferred Plus POS,medical
+anthem-blueviewvision,anthem,Blue View Vision,vision
+anthem-dentalppo,anthem,Dental PPO,dental
+anthem-freedomblueppo,anthem,Freedom Blue PPO,medical
+anthem-lumenosplans,anthem,Lumenos Plans,medical
+anthem-selectplushmo,anthem,Select Plus HMO,medical
+bcbs-bluecardppo,bcbs,Blue Card PPO,medical
+bcbs-bluecrosscaliforniappo,bcbs,Blue Cross California PPO,medical
+bcbs-blueshieldaccesshmo,bcbs,Blue Shield Access+ HMO,medical
+bcbs-blueshieldactivechoice,bcbs,Blue Shield Active Choice,medical
+bcbs-blueshieldactivestart,bcbs,Blue Shield Active Start,medical
+bcbs-blueshieldbalance,bcbs,Blue Shield Balance,medical
+bcbs-blueshieldbaseppo,bcbs,Blue Shield Base PPO,medical
+bcbs-blueshieldcaliforniachoiceppo,bcbs,Blue Shield California Choice PPO,medical
+bcbs-blueshieldcaliforniappo,bcbs,Blue Shield California PPO,medical
+bcbs-blueshieldcoreflex,bcbs,Blue Shield Core Flex,medical
+bcbs-blueshieldsavings,bcbs,Blue Shield Savings,medical
+bcbs-blueshieldspectrumppo,bcbs,Blue Shield Spectrum PPO,medical
+bcbs-floridabluepreferredpatientcareppo,bcbs,Florida Blue Preferred Patient Care PPO,medical
+bcbs-illinoisppo,bcbs,Illinois PPO,medical
+bcbs-texasbluechoice,bcbs,Texas Blue Choice,medical
+cigna-dentalepo,cigna,Dental EPO,dental
+cigna-dentalhmo,cigna,Dental HMO,dental
+cigna-dentalppo,cigna,Dental PPO,dental
+cigna-hmo,cigna,HMO,medical
+cigna-openaccess,cigna,Open Access,medical
+cigna-ppo,cigna,PPO,medical
+cigna-vision,cigna,Vision,vision
+coventry-carelinkhealthplansppo,coventry,Carelink Health Plans PPO,medical
+coventry-coventryofdelawarehmo,coventry,Coventry of Delaware - HMO,medical
+coventry-coventryoffloridahmo,coventry,Coventry of Florida - HMO,medical
+coventry-coventryoffloridappo,coventry,Coventry of Florida - PPO,medical
+coventry-coventryofgeorgiahmo,coventry,Coventry of Georgia - HMO,medical
+coventry-coventryofmissourihmopos,coventry,Coventry of Missouri - HMO/POS,medical
+coventry-coventryofvirginiahmo,coventry,Coventry of Virginia - HMO,medical
+coventry-firsthealthnetworkppo,coventry,First Health Network PPO,medical
+coventry-healthamericahealthassuranceppo,coventry,HealthAmerica HealthAssurance PPO,medical
+coventry-healthamericappo,coventry,Health America PPO,medical
+coventry-ppoplatinum,coventry,PPO Platinum,medical
+delta-ppo,delta,PPO,dental
+delta-premier,delta,Premier,dental
+dentalnetwork-deltanetworkofamerica,dentalnetwork,Delta Network of America,dental
+dentemax-dentemaxdental,dentemax,DenteMax Dental,dental
+guardiandental-guardiandentalguardpreferred,guardiandental,Guardian DentalGuard Preferred,dental
+healthnet-arizonahmo,healthnet,Arizona HMO,medical
+healthnet-arizonahmoexcelcarenetwork,healthnet,Arizona HMO ExcelCare Network,medical
+healthnet-arizonappopos,healthnet,Arizona PPO/POS,medical
+healthnet-californialargegroupppo,healthnet,California Large Group PPO,medical
+healthnet-hmoemployergroup,healthnet,HMO Employer Group,medical
+healthnet-nationalppofirsthealth,healthnet,National PPO (First Health),medical
+healthnet-oregoncommunitycare,healthnet,Oregon CommunityCare,medical
+healthnet-oregonppo,healthnet,Oregon PPO,medical
+humana-choicecarenetworkppo,humana,ChoiceCare Network PPO,medical
+humana-dentalppo,humana,Dental PPO,dental
+kaiser-kaiser,kaiser,Kaiser,"medical,dental"
+multiplan-multiplanppo,multiplan,Multiplan PPO,medical
+multiplan-phcsppo,multiplan,PHCS PPO,medical
+multiplan-phcsppokaiser,multiplan,PHCS PPO - Kaiser,medical
+uhc-choicepluspos,uhc,Choice Plus POS,medical
+uhc-dentalppo,uhc,Dental PPO,dental
+uhc-optionsppo,uhc,Options PPO,medical
+vsp-vsp,vsp,VSP,vision

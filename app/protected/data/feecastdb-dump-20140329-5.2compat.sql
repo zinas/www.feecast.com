@@ -413,6 +413,7 @@ CREATE TABLE `ins_plan` (
   `insurance` int(11) NOT NULL,
   `planName` varchar(45) DEFAULT NULL,
   `planDesc` varchar(200) DEFAULT NULL,
+  `planLogo` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `insurance_idx` (`insurance`),
   CONSTRAINT `INSPLAN_insurance` FOREIGN KEY (`insurance`) REFERENCES `ins_provider` (`id`)
