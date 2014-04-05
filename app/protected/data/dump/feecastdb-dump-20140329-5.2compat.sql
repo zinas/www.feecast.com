@@ -690,13 +690,18 @@ UNLOCK TABLES;
 -- Table structure for table `specialty`
 --
 
+-- Category: medical, dental, spirit, etc..
+
 DROP TABLE IF EXISTS `specialty`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `specialty` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category` int(4) NOT NULL DEFAULT 0,
   `specName` varchar(45) NOT NULL,
-  `specNote` varchar(45) DEFAULT NULL,
+  `specActor` varchar(45) NOT NULL,
+  `specPlural` varchar(45) NOT NULL,
+  `specNote` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `specName_UNIQUE` (`specName`),
   UNIQUE KEY `specID_UNIQUE` (`id`)
