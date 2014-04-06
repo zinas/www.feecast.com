@@ -76,4 +76,8 @@ class Physician extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getTitle() {
+		return $this->phyName.' '.$this->phyFamName.', '.$this->phyTitle;
+	}
 }

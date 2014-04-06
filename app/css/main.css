@@ -4,6 +4,11 @@
   background-size: contain;
 }
 
+.loader {
+  background: url(../images/loader.gif) 50% 50% no-repeat;
+  min-height: 80px;
+}
+
 .homepage .jumbotron {
   background: none;
   padding-top: 30px;

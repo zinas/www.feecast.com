@@ -1,4 +1,3 @@
-<?php $hasInsuranceInfo=Yii::app()->user->hasInsuranceInfo; ?>
 <div class="row">
     <div class="col-sm-9">
         <div class="" style="margin-bottom: 10px;">
@@ -40,7 +39,7 @@
                             <th>Facility</th>
                             <th>Location</th>
                             <th class="text-center">Your Price</th>
-                        <?php if ($hasInsuranceInfo===true) { ?>
+                        <?php if (Yii::app()->user->hasInsuranceInfo===true) { ?>
                             <th></th>
                         <?php } ?>
                             <th></th>
@@ -48,17 +47,23 @@
                     </thead>
                     <tbody>
                     <?php foreach ($fees as $fee) { ?>
-                        <tr>
+                        <tr
+                            data-center-id="<?php echo $fee->center_id?>"
+                            data-target-url="<?php echo $this->createUrl('fees/physicians')?>"
+                            data-cpt-id="<?php echo $fee->cpt_id?>"
+                            data-loaded="0">
                             <td style="height: 44px;" class="text-center">
                                 <i class="call-to-action theme fa fa-plus-circle fa-2x"></i>
                                 <i class="rev-call-to-action theme fa fa-minus-circle fa-2x"></i>
                             </td>
-                            <td data-title="Facility"><?php echo $fee['facility']?></td>
-                            <td data-title="Location"><?php echo $fee['location']?></td>
+                            <td data-title="Facility"><?php echo $fee->center->name?></td>
+                            <td data-title="Location"><?php echo $fee->center->addrRoad?></td>
                             <td class="text-center" data-title="Your Price">
                                 <div class="price-info">
-                                <?php if ($hasInsuranceInfo) { ?>
-                                    <span class="theme-prominent"><?php echo $fee['userPrice']?></span>
+                                <?php if (Yii::app()->user->hasInsuranceInfo) { ?>
+                                    <span class="theme-prominent">
+                                        <?php echo _::currency($fee->min_price).' - '._::currency($fee->max_price)?>
+                                    </span>
                                 <?php } else { ?>
                                     <a data-toggle="modal" href="#insurance-info-modal">Enter insurance info</a>
                                     <?php if (Yii::app()->user->isGuest) { ?>
@@ -67,7 +72,7 @@
                                 <?php } ?>
                                 </div>
                             </td>
-                        <?php if ($hasInsuranceInfo===true) { ?>
+                        <?php if (Yii::app()->user->hasInsuranceInfo===true) { ?>
                             <td data-title=""><button type="button" class="btn btn-theme">Request an appointment</button></td>
                         <?php } ?>
                             <td><button type="button" class="contact btn btn-default">Contact provider</button></td>

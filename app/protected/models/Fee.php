@@ -6,6 +6,11 @@
  */
 class Fee extends CActiveRecord
 {
+
+	// Variables for placeholders of MIN() and MAX() SQL functions
+	public $min_price;
+	public $max_price;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -40,6 +45,7 @@ class Fee extends CActiveRecord
 			'physician' => array(self::BELONGS_TO, 'Physician', 'physician_id'),
 			'center' => array(self::BELONGS_TO, 'Center', 'center_id'),
 			'patient' => array(self::BELONGS_TO, 'Patient', 'patient_id'),
+			'cpt' => array(self::BELONGS_TO, 'Cpt', 'cpt_id'),
 		);
 	}
 
@@ -97,5 +103,59 @@ class Fee extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	/**
+	 * Named scope for filtering fees only for the logged in user
+	 * @return Fee
+	 */
+	public function currentUser() {
+        $this->getDbCriteria()->mergeWith(array(
+            'condition'=>'patient_id = :id',
+            'params'=>array(':id'=>Yii::app()->user->id),
+        ));
+        return $this;
+	}
+
+	/**
+	 * Named scope for grouping by center and returning min-max values
+	 * @return Fee
+	 */
+	public function onlySummary() {
+		$this->getDbCriteria()->mergeWith(array(
+			'select' => $this->getDbCriteria()->select.', MIN(patient_price) AS min_price, MAX(patient_price) as max_price',
+			'group' => 'center_id',
+			'order' => 'min_price ASC'
+		));
+
+		return $this;
+	}
+
+	/**
+	 * Named scope for searching fees around a location
+	 * @return Fee
+	 */
+	public function location($location) {
+		$this->getDbCriteria()->mergeWith(array(
+			'with' => 'center',
+			'condition' => 'center.addrCity LIKE :location',
+			'params' => array(':location' => '%'.$location.'%')
+		));
+
+		return $this;
+	}
+
+	/**
+	 * Named scope for searching fees for a specific cpt
+	 * @return Fee
+	 */
+	public function cpt($cpt) {
+		$this->getDbCriteria()->mergeWith(array(
+			'with' => 'cpt',
+			'condition' => 'cpt.cptCode = :code',
+			'params' => array(':code' => $cpt)
+		));
+
+		return $this;
 	}
 }
