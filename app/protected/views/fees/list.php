@@ -148,21 +148,16 @@
   <h2 class="form-login-heading">fill in your insurance info</h2>
   <div class="login-wrap">
         <label>Choose insurance carrier</label>
-        <select name="carrier" onchange="$('.insurance-options').removeClass('hidden');">
+        <select name="carrier" class="insurance-carrier" data-target-url="<?php echo $this->createUrl('fees/plans')?>">
             <option value="-1">Select one...</option>
-            <option value="0">Insurance 1</option>
-            <option value="1">Insurance 2</option>
-            <option value="2">Insurance 3</option>
+            <?php foreach ($providers as $provider) { ?>
+                <option value="<?php echo $provider->id?>"><?php echo $provider->insName?></option>
+            <?php } ?>
         </select>
         <div class="insurance-options hidden">
       <hr>
         <label>Select plan</label>
-        <select name="carrier" onchange="$('.insurance-options').removeClass('hidden');">
-            <option value="-1">Select one...</option>
-            <option value="0">Plan 1</option>
-            <option value="1">Plan 2</option>
-            <option value="2">Plan 3</option>
-        </select>
+        <div class="plans-placeholder"></div>
         <br><br><strong>OR</strong><br><br>
       <label>Enter your policy number</label>
       <input type="text" class="form-control" name="password" placeholder="Policy number">

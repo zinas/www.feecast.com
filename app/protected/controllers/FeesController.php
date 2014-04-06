@@ -37,7 +37,15 @@ class FeesController extends Controller
             'fees' => $fees,
             'term' => $term,
             'location' => $location,
-            'summary' => $summary
+            'summary' => $summary,
+            'providers' => InsuranceProvider::model()->findAll(array('order' => 'insName ASC'))
+        ));
+    }
+
+    public function actionPlans() {
+        $insurance = InsuranceProvider::model()->findByPk(Yii::app()->request->getParam('insurance-id'));
+        $this->renderPartial('plans', array(
+            'plans' => $insurance->plans
         ));
     }
 
