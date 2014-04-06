@@ -39,9 +39,6 @@
                             <th>Facility</th>
                             <th>Location</th>
                             <th class="text-center">Your Price</th>
-                        <?php if (Yii::app()->user->hasInsuranceInfo===true) { ?>
-                            <th></th>
-                        <?php } ?>
                             <th></th>
                         </tr>
                     </thead>
@@ -72,10 +69,7 @@
                                 <?php } ?>
                                 </div>
                             </td>
-                        <?php if (Yii::app()->user->hasInsuranceInfo===true) { ?>
-                            <td data-title=""><button type="button" class="btn btn-theme">Request an appointment</button></td>
-                        <?php } ?>
-                            <td><button type="button" class="contact btn btn-default">Contact provider</button></td>
+                            <td data-title=""><button type="button" class="btn btn-theme">Contact provider</button></td>
                         </tr>
                     <?php } ?>
                     </tbody>
