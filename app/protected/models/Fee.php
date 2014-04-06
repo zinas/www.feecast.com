@@ -10,6 +10,7 @@ class Fee extends CActiveRecord
 	// Variables for placeholders of MIN() and MAX() SQL functions
 	public $min_price;
 	public $max_price;
+	public $average_price;
 
 	/**
 	 * @return string the associated database table name
@@ -121,7 +122,7 @@ class Fee extends CActiveRecord
 	 * Named scope for grouping by center and returning min-max values
 	 * @return Fee
 	 */
-	public function onlySummary() {
+	public function summaryByCenter() {
 		$this->getDbCriteria()->mergeWith(array(
 			'select' => $this->getDbCriteria()->select.', MIN(patient_price) AS min_price, MAX(patient_price) as max_price',
 			'group' => 'center_id',
@@ -130,6 +131,19 @@ class Fee extends CActiveRecord
 
 		return $this;
 	}
+
+	/**
+	 * Named scope for summary
+	 * @return Fee
+	 */
+	public function summary() {
+		$this->getDbCriteria()->mergeWith(array(
+			'select' => 'MIN(patient_price) AS min_price, MAX(patient_price) as max_price, AVG(patient_price) as average_price',
+		));
+
+		return $this;
+	}
+
 
 	/**
 	 * Named scope for searching fees around a location

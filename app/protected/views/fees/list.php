@@ -93,7 +93,7 @@
                         </div>
                         <div class="media-body">
                             <h5>Price range</h5>
-                            <p>$1,500 - 21,500</p>
+                            <p><?php echo _::currency($summary['min_price']) . ' - ' . _::currency($summary['max_price'])?></p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="media-body">
                             <h5>Average Price</h5>
-                            <p>$4,500</p>
+                            <p><?php echo _::currency($summary['average_price']) ?></p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                         </div>
                         <div class="media-body">
                             <h5>Hospitals</h5>
-                            <p>$7,500 - $21,500</p>
+                            <p class="discreet">Not implented yet</p>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                         </div>
                         <div class="media-body">
                             <h5>Providers in other areas</h5>
-                            <p>$2,000 - $2,700</p>
+                            <p class="discreet">Not implented yet</p>
                         </div>
                     </div>
                 </div>
