@@ -8,6 +8,9 @@
     });
 
   $('#fees-list').on('click', 'tbody tr.odd, tbody tr.even', function () {
+        if (!user.hasInsuranceInfo) {
+          return false;
+        }
         var nTr = $(this)[0],
             $tr = $(this),
             loaded = $(this).data('loaded')=="1"?true:false;

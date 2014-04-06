@@ -15,10 +15,6 @@ class FeesController extends Controller
     }
 
     public function actionList() {
-        if (Yii::app()->user->isGuest) {
-            echo "Searching for anonymous users under development. Go back and try logging in first";
-            return;
-        }
         $term = Yii::app()->request->getParam('search-need');
         $location = Yii::app()->request->getParam('search-location')?Yii::app()->request->getParam('search-location'):'Chicago';
         $cpt = _::parseCpt($term);

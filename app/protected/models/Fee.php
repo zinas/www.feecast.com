@@ -111,9 +111,11 @@ class Fee extends CActiveRecord
 	 * @return Fee
 	 */
 	public function currentUser() {
+		// arbitrary set 3 for the demo
+		$id = Yii::app()->user->id?Yii::app()->user->id:3;
         $this->getDbCriteria()->mergeWith(array(
             'condition'=>'patient_id = :id',
-            'params'=>array(':id'=>Yii::app()->user->id),
+            'params'=>array(':id'=>$id),
         ));
         return $this;
 	}

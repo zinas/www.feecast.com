@@ -22,7 +22,13 @@
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/typeahead.css">
-        <script>var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>";</script>
+        <script>
+            var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>";
+            var user = {
+                id: <?php echo Yii::app()->user->id?>,
+                hasInsuranceInfo: <?php echo Yii::app()->user->hasInsuranceInfo?>
+            };
+        </script>
     </head>
     <body class="<?php echo Yii::app()->controller->id=="site"&&Yii::app()->controller->action->id=="index"?'homepage':'' ?>">
         <!--[if lt IE 8]>
