@@ -66,7 +66,7 @@ a, a:hover, a:focus {
 	background-color: #ffffff;
 	outline: none !important;
 	text-decoration: none;
-}	
+}
 
 
 
@@ -981,7 +981,7 @@ PANELS CONFIGURATIONS
 	color: white;
 }
 .darkblue-panel footer h5 {
-	margin-left:10px; 
+	margin-left:10px;
 	margin-right: 10px;
 	font-weight: 700;
 }
@@ -1028,7 +1028,7 @@ PANELS CONFIGURATIONS
 .card {
   background: white;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   height: 250px;
 }
 .stock .stock-chart {
@@ -1036,11 +1036,11 @@ PANELS CONFIGURATIONS
 }
 .stock .stock-chart #chart {
     height: 10.7em;
-    background: url(http://i.imgbox.com/abmuNQx2) center bottom no-repeat; 
-}    
+    background: url(http://i.imgbox.com/abmuNQx2) center bottom no-repeat;
+}
 .stock .current-price {
   background: #1d2122;
-  padding: 10px; 
+  padding: 10px;
 }
 .stock .current-price .info abbr {
     display: block;
@@ -1050,14 +1050,14 @@ PANELS CONFIGURATIONS
     margin-top: 0.18em;
 }
 .stock .current-price .changes {
-    text-align: right; 
+    text-align: right;
 }
 .stock .changes .up {
 	color: #4fd98b
 }
 .stock .current-price .changes .value {
       font-size: 1.8em;
-      font-weight: 700; 
+      font-weight: 700;
 }
 .stock .summary {
     color: #2f2f2f;
@@ -1320,7 +1320,7 @@ PANELS CONFIGURATIONS
 
 /* BLOG PANEL */
 #blog-bg {
-	background: url(../img/blog-bg.jpg) no-repeat center top;
+	background: url(../images/medical-center-bg-placeholder.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1676,7 +1676,7 @@ PANELS CONFIGURATIONS
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
-  
+
 }
 
 .project:hover .photo-wrapper {
@@ -2192,7 +2192,7 @@ ul.my-friends li .friends-pic {
 	font-size: 2.4em;
 	line-height: 100px;
 	color: #fff;
-	background-color:#4ECDC4;	
+	background-color:#4ECDC4;
 		-webkit-transition: all 0.6s ease-in-out;
 		transition: all 0.6s ease-in-out;
 }
@@ -2220,7 +2220,7 @@ ul.my-friends li .friends-pic {
 
 
 /* FAQ CONF */
-.dmbox {  
+.dmbox {
 	margin: 0;
 	border: 0;
 	border: 1px solid #EDEDED;

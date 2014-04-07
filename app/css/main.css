@@ -256,3 +256,29 @@ box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
   color: #aaa;
   font-style: italic;
 }
+
+.provider-contact .white-panel.pn {
+  height: auto;
+}
+.provider-contact .white-panel.pn p {padding: 2px 5px;}
+.provider-contact form {padding: 0 10px;}
+.provider-contact form input {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  font-style: italic;
+  box-shadow: none;
+  --webkit-box-shadow: none;
+}
+.content-panel.medical-center {
+  height: auto;
+}
+#blog-bg {position: relative;}
+#blog-bg .blog-title {bottom:0; width: 100%;}
+.blog-text p {
+  margin-bottom: 0;
+}
+
+.left-divider {
+  border-left: 1px solid #d3d3d3;
+  height: 100%;
+}
