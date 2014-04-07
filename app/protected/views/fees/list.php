@@ -38,7 +38,7 @@
                             <th style="min-width: 40px;"></th>
                             <th>Facility</th>
                             <th>Location</th>
-                            <th class="text-center">Your Price</th>
+                            <th class="text-center">Total Cost</th>
                             <th></th>
                         </tr>
                     </thead>
