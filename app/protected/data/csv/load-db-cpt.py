@@ -36,15 +36,18 @@ insertCPTStmt = ("INSERT INTO cpt (id, cptCode, cptLongDesc, cptShortDesc, cptAd
 with open(cname,"r") as datfile:
 	csvr = csv.reader(datfile, delimiter='|')
 	try:
-    		print "ID Code Long Short Note Body"
-       		for row in csvr:
-                    # CPT_LONG_DESCRIPTION|CPT_ADD_NOTE|CPT_CODE|CPT_SHORT_DESCRIPTION
-                    print cnt, '|', row[2], '|', row[0], '|', row[3], '|', row[1]
-                    dataCPT = (cnt,row[2],row[0],row[3],row[1])
-                    cursor.execute(insertCPTStmt,dataCPT)                    
-                    cnt = cnt + 1
+            print "ID Code Long Short Note Body"
+            for row in csvr:
+                # CPT_LONG_DESCRIPTION|CPT_ADD_NOTE|CPT_CODE|CPT_SHORT_DESCRIPTION
+                print cnt, '|', row[2], '|', row[0], '|', row[3], '|', row[1]
+                dataCPT = (cnt,row[2],row[0],row[3],row[1])
+                #cursor.execute(insertCPTStmt,dataCPT)                    
+                cnt = cnt + 1
 	except csv.Error as e:
-        	sys.exit('file %s, line %d: %s' % (rname, resultReader.line_num, e))
+            sys.exit('file %s, line %d: %s' % (rname, resultReader.line_num, e))
+        except mysql.connector.errors.IntegrityError as e:
+            print "IntegrityError: ", row[2]
+            pass
 
 print (cnt-1), ' plans added'
 
