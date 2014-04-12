@@ -3,7 +3,7 @@
         <div class="" style="margin-bottom: 10px;">
 
             <div class="row fees-filters">
-                <div class="col-sm-5">
+                <!-- <div class="col-sm-5">
                     <label>Price Range</label>
                     <div style="padding-top: 7px;">
                     <input
@@ -22,7 +22,9 @@
                 </div>
                 <div class="col-sm-3" style="padding-top: 23px;">
                     <button class="btn btn-sm btn-primary">Filter Fees</button>
-                </div>
+                </div> -->
+
+                <a href="#" style="margin-left: 30px;">Advanced search</a>
             </div>
 
         </div>
@@ -62,10 +64,13 @@
                                         <?php echo _::currency($fee->min_price).' - '._::currency($fee->max_price)?>
                                     </span>
                                 <?php } else { ?>
+                                    <button class="btn btn-default">Get your price</button>
+                                    <?php /*
                                     <a data-toggle="modal" href="#insurance-info-modal">Enter insurance info</a>
                                     <?php if (Yii::app()->user->isGuest) { ?>
                                         <p style="margin:0; padding: 0;">or</p> <a data-toggle="modal" href="#login-form-modal">login</a>
                                     <?php } ?>
+                                    */ ?>
                                 <?php } ?>
                                 </div>
                             </td>
@@ -98,8 +103,8 @@
                             <i class="fa fa-bar-chart-o fa-4x theme-4 media-object"></i>
                         </div>
                         <div class="media-body">
-                            <h5>Average Price</h5>
-                            <p><?php echo _::currency($summary['average_price']) ?></p>
+                            <h5>Max Recommended Price</h5>
+                            <p><?php echo _::currency(3*$summary['average_price']) ?></p>
                         </div>
                     </div>
                 </div>

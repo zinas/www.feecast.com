@@ -3,24 +3,23 @@ class SearchState extends CApplicationComponent {
     private $_terms = array();
 
     // add the keys you want to save to session
-    private $_termKeys = array();
+    private $_termKeys = array('search-need');
 
     public function init() {
         $this->_terms = isset(Yii::app()->session['terms'])?Yii::app()->session['terms']:array();
-        if (Yii::app()->request->getPost('search-needs')) {
+        if (Yii::app()->request->getPost('search-need')) {
             Yii::app()->session['terms'] = $this->_buildTermsFromPost();
             $this->_terms = Yii::app()->session['terms'];
-
         }
 
         parent::init();
     }
 
-    public function getTerm($key) {
+    public function getParam($key) {
         return isset($this->_terms[$key])?$this->_terms[$key]:null;
     }
 
-    public function getTerms() {
+    public function getParams() {
         return $this->_terms;
     }
 

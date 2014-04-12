@@ -269,6 +269,13 @@ box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow: none;
   --webkit-box-shadow: none;
 }
+.provider-contact .blog-text {
+  height: 55px;
+  overflow: hidden;
+  margin-top: 0px;
+  padding-top: 5px;
+}
+
 .content-panel.medical-center {
   height: auto;
 }
@@ -282,3 +289,32 @@ box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
   border-left: 1px solid #d3d3d3;
   height: 100%;
 }
+
+/***** provider details *****/
+.center-background {
+  height: 300px;
+
+  position: absolute;
+
+  background: url() center 0 no-repeat;
+  background-size: cover;
+
+  top: 0px;
+  left: 0; right: 0;
+
+  z-index: -1;
+}
+
+.center-logo {
+  background: #fff url() center center no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  left: 20%;
+  bottom: -40px;
+
+  height: 130px;
+  width: 130px;
+}
+
+.shift-left {margin-right: 10px; margin-left: -10px;}

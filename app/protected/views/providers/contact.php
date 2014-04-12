@@ -14,7 +14,40 @@
                 </div>
             </div>
             <div class="col-xs-8">
-                <div class="content-panel">
+                <div class="row content-panel" style="margin:0;">
+                    <div class="col-md-4 centered">
+                        <div class="profile-pic">
+                            <p><img src="<?php echo Yii::app()->baseUrl?>/images/house.jpg" class="img-circle"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 profile-text">
+                        <h3><?php echo $physician->title?></h3>
+                        <h6><?php echo $physician->specialtiesTitle?></h6>
+                        <p><?php echo $cpt->cptLongDesc?></p>
+                    </div>
+
+                    <div class="col-md-4 profile-text mb centered">
+                        <div class="left-divider hidden-sm hidden-xs">
+                            <h4>$1,000.00</h4>
+                            <h6>Physician</h6>
+                            <h4>$1,000.00</h4>
+                            <h6>Facility</h6>
+                            <h4>$1,000.00</h4>
+                            <h6>Anesthisiologist</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fee details -->
+        <div class="content-panel mt" style="padding: 10px;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Insurance info goes here</p>
+                </div>
+
+                <div class="col-sm-8">
                     <form class="form-horizontal" role="form">
                       <div class="form-group">
                         <label class="col-sm-3 control-label">First Name</label>
@@ -46,55 +79,17 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <!-- fee details -->
 
             <div class="row mt">
-                <div class="col-lg-12">
-                    <div class="row content-panel" style="margin:0;">
-                        <div class="col-md-4 centered">
-                            <div class="profile-pic">
-                                <p><img src="<?php echo Yii::app()->baseUrl?>/images/house.jpg" class="img-circle"></p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 profile-text">
-                            <h3><?php echo $physician->title?></h3>
-                            <h6><?php echo $physician->specialtiesTitle?></h6>
-                            <p><?php echo $cpt->cptLongDesc?></p>
-                        </div>
-
-                        <div class="col-md-4 profile-text mb centered">
-                            <div class="left-divider hidden-sm hidden-xs">
-                                <h4>$1,000.00</h4>
-                                <h6>Physician</h6>
-                                <h4>$1,000.00</h4>
-                                <h6>Facility</h6>
-                                <h4>$1,000.00</h4>
-                                <h6>Anesthisiologist</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt">
-                <div class="col-xs-5">
-                    <div class="white-panel pn">
-                    <div class="white-header"><h5>Your insurance info</h5></div>
-                    <p>Insurance info goes here</p>
-                </div>
-                </div>
-                <div class="col-xs-7">
-                    <div class="content-panel">
-                        <div style="padding: 5px">
-                            <label>Notes and questions for the center</label>
-                            <textarea class="form-control" rows="10"></textarea>
-                        </div>
+                <div class="col-sm-12">
+                    <div style="padding: 5px">
+                        <label>Notes and questions for the center</label>
+                        <textarea class="form-control" rows="10"></textarea>
                     </div>
                 </div>
             </div>
             <button type="button" class="btn btn-primary btn-lg btn-block mt">Submit</button>
+        </div>
     </div>
     <div class="col-xs-3">
         <div class="white-panel pn">

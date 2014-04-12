@@ -15,7 +15,7 @@ class FeesController extends Controller
     }
 
     public function actionList() {
-        $term = Yii::app()->request->getParam('search-need');
+        $term = Yii::app()->searchState->getParam('search-need');
         $location = Yii::app()->request->getParam('search-location')?Yii::app()->request->getParam('search-location'):'Chicago';
         $cpt = _::parseCpt($term);
 

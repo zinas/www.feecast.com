@@ -97,4 +97,8 @@ class Center extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getHourSummary() {
+		return 'Monday-Friday: 08.00 AM - 6.00 PM';
+	}
 }

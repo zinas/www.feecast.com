@@ -19,4 +19,12 @@ class ProvidersController extends Controller
             'cpt' => $cpt,
         ));
     }
+
+    public function actionDetails() {
+        $center = Center::model()->findByPk(6);
+
+        $this->render('details', array(
+            'center' => $center
+        ));
+    }
 }
