@@ -73,4 +73,10 @@ class FeesController extends Controller
 
         $this->renderJSON($result);
     }
+
+    public function actionTest() {
+        $centers = Center::model();
+
+        CVarDumper::dump($centers, 10, true);
+    }
 }

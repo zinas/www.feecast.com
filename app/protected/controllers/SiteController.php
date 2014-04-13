@@ -2,7 +2,7 @@
 
 class SiteController extends Controller
 {
-	var $layout = '//layouts/bootstrap-with-sidebar';
+	var $layout = '//layouts/bootstrap-single-column';
 	/**
 	 * Declares class-based actions.
 	 */
@@ -60,12 +60,15 @@ class SiteController extends Controller
 	 */
 	public function actionError()
 	{
+		$this->layout = '//layouts/bootstrap-naked';
 		if($error=Yii::app()->errorHandler->error)
 		{
+			//CVarDumper::dump($error, 10, true);
 			if(Yii::app()->request->isAjaxRequest)
 				echo $error['message'];
-			else
+			else {
 				$this->render('error', $error);
+			}
 		}
 	}
 }
