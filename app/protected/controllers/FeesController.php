@@ -24,7 +24,7 @@ class FeesController extends Controller
             ->with(array(
                 'pricings' => array(
                     'joinType'=>'INNER JOIN',
-                    'scopes' => array('cpt' => 23020)
+                    'scopes' => array('cpt' => $cpt)
                 ),
                 'pricings.physicianPrices' => array(
                     'joinType'=>'INNER JOIN'
@@ -60,7 +60,7 @@ class FeesController extends Controller
             $total += ($center->center_total_price+$center->center_total_price_max)/2;
         }
 
-        $summary['average_price'] = $total / count($centers);
+        $summary['average_price'] = count($centers)>0?$total / count($centers):0;
 
 
         $this->render('list', array(
