@@ -38,9 +38,9 @@ class PhysicianPricing extends CActiveRecord
 	public function relations()
 	{
 		return array(
-			'physician' => array(self::BELONGS_TO, 'Physician', 'physician'),
-			'center' => array(self::BELONGS_TO, 'Center', 'center'),
-			'cpt' => array(self::BELONGS_TO, 'Cpt', 'cpt'),
+			'_physician' => array(self::BELONGS_TO, 'Physician', 'physician'),
+			'_center' => array(self::BELONGS_TO, 'Center', 'center'),
+			'_cpt' => array(self::BELONGS_TO, 'Cpt', 'cpt'),
 		);
 	}
 

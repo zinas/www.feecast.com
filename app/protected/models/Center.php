@@ -6,6 +6,15 @@
  */
 class Center extends CActiveRecord
 {
+	/* fee related variables */
+	public $center_patient_price = 0;
+	public $center_insurance_price = 0;
+	public $center_total_price = 0;
+	public $min_physician_price = 0;
+	public $max_physician_price = 0;
+	public $cpt = null;
+
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -100,5 +109,13 @@ class Center extends CActiveRecord
 
 	public function getHourSummary() {
 		return 'Monday-Friday: 08.00 AM - 6.00 PM';
+	}
+
+	public function getMinTotal() {
+		return $this->center_patient_price + $this->center_insurance_price + $this->min_physician_price;
+	}
+
+	public function getMaxTotal() {
+		return $this->center_patient_price + $this->center_insurance_price + $this->max_physician_price;
 	}
 }

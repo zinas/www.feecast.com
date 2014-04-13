@@ -45,23 +45,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($fees as $fee) { ?>
+                    <?php foreach ($centers as $center) { ?>
                         <tr
-                            data-center-id="<?php echo $fee->center_id?>"
+                            data-center-id="<?php echo $center->id?>"
                             data-target-url="<?php echo $this->createUrl('fees/physicians')?>"
-                            data-cpt-id="<?php echo $fee->cpt_id?>"
+                            data-cpt-id="<?php echo $center->cpt ?>"
                             data-loaded="0">
                             <td style="height: 44px;" class="text-center">
                                 <i class="call-to-action theme fa fa-plus-circle fa-2x"></i>
                                 <i class="rev-call-to-action theme fa fa-minus-circle fa-2x"></i>
                             </td>
-                            <td data-title="Facility"><?php echo $fee->center->name?></td>
-                            <td data-title="Location"><?php echo $fee->center->addrRoad?></td>
+                            <td data-title="Facility"><?php echo $center->name?></td>
+                            <td data-title="Location"><?php echo $center->addrRoad?></td>
                             <td class="text-center" data-title="Your Price">
                                 <div class="price-info">
                                 <?php if (Yii::app()->user->hasInsuranceInfo) { ?>
                                     <span class="theme-prominent">
-                                        <?php echo _::currency($fee->min_price).' - '._::currency($fee->max_price)?>
+                                        <?php echo _::currency($center->minTotal).' - '._::currency($center->maxTotal)?>
                                     </span>
                                 <?php } else { ?>
                                     <button class="btn btn-default">Get your price</button>

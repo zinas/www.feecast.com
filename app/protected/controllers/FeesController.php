@@ -19,12 +19,29 @@ class FeesController extends Controller
         $location = Yii::app()->request->getParam('search-location')?Yii::app()->request->getParam('search-location'):'Chicago';
         $cpt = _::parseCpt($term);
 
-        $fees = Fee::model()
-                ->location($location)
-                ->cpt($cpt)
-                ->currentUser()
-                ->summaryByCenter()
-                ->findAll();
+        // TODO: Add location
+        $centers = Center::model()
+            ->with(array(
+                'pricings' => array(
+                    'joinType'=>'INNER JOIN',
+                    'scopes' => array('cpt' => 23020)
+                ),
+                'pricings.physicianPrices' => array(
+                    'joinType'=>'INNER JOIN'
+                )
+            ))
+            ->findAll(array(
+                'select' => 't.*,
+                    pricings.pricePatient AS center_patient_price,
+                    pricings.priceIns AS center_insurance_price,
+                    MIN(physicianPrices.price) AS min_physician_price,
+                    MAX(physicianPrices.price) AS max_physician_price,
+                    (pricings.pricePatient + pricings.priceIns + MIN(physicianPrices.price)) AS center_total_price,
+                    pricings.cpt as cpt
+                ',
+                'order' => 'center_total_price ASC',
+                'group' => 't.id'
+            ));
 
         $summary = Fee::model()
                 ->location($location)
@@ -34,7 +51,7 @@ class FeesController extends Controller
                 ->find();
 
         $this->render('list', array(
-            'fees' => $fees,
+            'centers' => $centers,
             'term' => $term,
             'location' => $location,
             'summary' => $summary,
@@ -53,21 +70,22 @@ class FeesController extends Controller
         $center_id = Yii::app()->request->getParam('center_id');
         $cpt_id = Yii::app()->request->getParam('cpt_id');
 
-        $fees = Fee::model()
-            ->currentUser()
+        $fees = PhysicianPricing::model()
+            ->with('_physician')
             ->findAll(array(
-                'condition' => 'center_id=:cid AND cpt_id=:cpt_id',
-                'params' => array(':cid' => $center_id, ':cpt_id' => $cpt_id),
-                'order' =>  'patient_price ASC'
+                'condition' => 'center=:center AND cpt=:cpt',
+                'params' => array(':center' => $center_id, ':cpt' => $cpt_id),
+                'order' =>  'price ASC'
             ));
 
         $result = array();
 
+
         foreach ($fees as $fee) {
             $result[] = array(
                 'feeId' => $fee->id,
-                'physician' => $fee->physician->title,
-                'price' => _::currency($fee->patient_price)
+                'physician' => $fee->_physician->title,
+                'price' => _::currency($fee->price)
             );
         }
 
@@ -75,8 +93,40 @@ class FeesController extends Controller
     }
 
     public function actionTest() {
-        $centers = Center::model();
+        $centers = Center::model()
+            ->with(array(
+                'pricings' => array(
+                    'joinType'=>'INNER JOIN',
+                    'scopes' => array('cpt' => 23020)
+                ),
+                'pricings.physicianPrices' => array(
+                    'joinType'=>'INNER JOIN'
+                )
+            ))
+            ->findAll(array(
+                'select' => 't.*,
+                    pricings.pricePatient AS center_patient_price,
+                    pricings.priceIns AS center_insurance_price,
+                    (pricings.pricePatient + pricings.priceIns) AS center_total_price,
+                    MIN(physicianPrices.price) AS min_physician_price,
+                    MAX(physicianPrices.price) AS max_physician_price
+                ',
+                'order' => 'center_total_price ASC',
+                'group' => 't.id'
+            ));
 
-        CVarDumper::dump($centers, 10, true);
+        foreach ($centers as $center) {
+            $dump = array(
+                'attributes' => $center->attributes,
+                'center_patient_price' => $center->center_patient_price,
+                'center_insurance_price' => $center->center_insurance_price,
+                'center_total_price' => $center->center_total_price,
+                'min_physician_price' => $center->min_physician_price,
+                'max_physician_price' => $center->max_physician_price,
+            );
+            CVarDumper::dump($dump, 10, true);
+
+            echo '<br><br>***************************************************<br><br>';
+        }
     }
 }

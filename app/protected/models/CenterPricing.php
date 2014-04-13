@@ -39,6 +39,7 @@ class CenterPricing extends CActiveRecord
 	public function relations()
 	{
 		return array(
+			'physicianPrices' => array(self::HAS_MANY, 'PhysicianPricing', array('cpt'=>'cpt', 'center'=>'center')),
 			'center' => array(self::BELONGS_TO, 'Center', 'center'),
 			'insurance' => array(self::BELONGS_TO, 'InsuranceProvider', 'insurance'),
 			'cpt' => array(self::BELONGS_TO, 'Cpt', 'cpt'),
@@ -71,5 +72,23 @@ class CenterPricing extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	/**
+	 * Named scope for searching fees for a specific cpt
+	 * @return Fee
+	 */
+	public function cpt($cpt) {
+		$this->getDbCriteria()->mergeWith(array(
+			'with' => array(
+				'cpt' => array(
+					'condition' => 'cpt.cptCode = :code',
+					'joinType' => 'INNER JOIN',
+					'params' => array(':code' => $cpt)
+				)
+			),
+		));
+
+		return $this;
 	}
 }
