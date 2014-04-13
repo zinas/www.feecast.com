@@ -10,6 +10,7 @@ class Center extends CActiveRecord
 	public $center_patient_price = 0;
 	public $center_insurance_price = 0;
 	public $center_total_price = 0;
+	public $center_total_price_max = 0;
 	public $min_physician_price = 0;
 	public $max_physician_price = 0;
 	public $cpt = null;

@@ -37,18 +37,31 @@ class FeesController extends Controller
                     MIN(physicianPrices.price) AS min_physician_price,
                     MAX(physicianPrices.price) AS max_physician_price,
                     (pricings.pricePatient + pricings.priceIns + MIN(physicianPrices.price)) AS center_total_price,
+                    (pricings.pricePatient + pricings.priceIns + MAX(physicianPrices.price)) AS center_total_price_max,
                     pricings.cpt as cpt
                 ',
                 'order' => 'center_total_price ASC',
                 'group' => 't.id'
             ));
 
-        $summary = Fee::model()
-                ->location($location)
-                ->cpt($cpt)
-                ->currentUser()
-                ->summary()
-                ->find();
+        $summary = array(
+            'min_price' => 9999999,
+            'max_price' => 0,
+            'average_price' => 0
+        );
+        $total = 0;
+
+        foreach ($centers as $center) {
+            if ($center->center_total_price<$summary['min_price'])
+                $summary['min_price'] = $center->center_total_price;
+            if ($center->center_total_price_max>$summary['max_price'])
+                $summary['max_price'] = $center->center_total_price_max;
+
+            $total += ($center->center_total_price+$center->center_total_price_max)/2;
+        }
+
+        $summary['average_price'] = $total / count($centers);
+
 
         $this->render('list', array(
             'centers' => $centers,
