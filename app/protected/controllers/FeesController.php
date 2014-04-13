@@ -96,7 +96,7 @@ class FeesController extends Controller
 
         foreach ($fees as $fee) {
             $result[] = array(
-                'feeId' => $fee->id,
+                'physicianId' => $fee->physician,
                 'physician' => $fee->_physician->title,
                 'price' => _::currency($fee->price)
             );

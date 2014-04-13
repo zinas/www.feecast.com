@@ -17,24 +17,26 @@
                 <div class="row content-panel" style="margin:0;">
                     <div class="col-md-4 centered">
                         <div class="profile-pic">
-                            <p><img src="<?php echo Yii::app()->baseUrl?>/images/house.jpg" class="img-circle"></p>
+                            <p><img src="<?php echo $selectedPhysician?$physician->image:Physician::getDefaultImage()?>" class="img-circle"></p>
                         </div>
                     </div>
 
                     <div class="col-md-4 profile-text">
-                        <h3><?php echo $physician->title?></h3>
-                        <h6><?php echo $physician->specialtiesTitle?></h6>
-                        <p><?php echo $cpt->cptLongDesc?></p>
+                        <h3><?php echo $selectedPhysician?$physician->title:''?></h3>
+                        <h6><?php echo $selectedPhysician?$physician->specialtiesTitle:''?></h6>
+                        <p style="<?php echo $selectedPhysician?'':'margin-top: 60px'?>"><?php echo $cpt->cptLongDesc?></p>
                     </div>
 
                     <div class="col-md-4 profile-text mb centered">
                         <div class="left-divider hidden-sm hidden-xs">
-                            <h4>$1,000.00</h4>
+                            <?php if ($selectedPhysician) { ?>
+                            <h4><?php echo _::currency($physicianPrice) ?></h4>
                             <h6>Physician</h6>
-                            <h4>$1,000.00</h4>
+                            <?php } else { echo '<br>'; } ?>
+                            <h4><?php echo _::currency($centerPrice) ?></h4>
                             <h6>Facility</h6>
-                            <h4>$1,000.00</h4>
-                            <h6>Anesthisiologist</h6>
+                            <h4>$650.00</h4>
+                            <h6>Other expenses</h6>
                         </div>
                     </div>
                 </div>
@@ -43,8 +45,18 @@
         <!-- fee details -->
         <div class="content-panel mt" style="padding: 10px;">
             <div class="row">
-                <div class="col-sm-4">
-                    <p>Insurance info goes here</p>
+                <div class="col-sm-4 insurance-info">
+                    <h4>Your Insurance Info</h4>
+                    <?php if (Yii::app()->user->isGuest) { ?>
+
+                    <?php } else { ?>
+                        <label>Insurance Provider</label>
+                        <p><?php echo Yii::app()->user->patient->ins->insName?></p>
+                        <label>Insurance Plan</label>
+                        <p><?php echo Yii::app()->user->patient->plan->planName?></p>
+                        <label>Policy Number</label>
+                        <p><?php echo Yii::app()->user->patient->patPolicyNum?></p>
+                    <?php } ?>
                 </div>
 
                 <div class="col-sm-8">

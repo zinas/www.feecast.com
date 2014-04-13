@@ -49,13 +49,18 @@
                         <tr
                             data-center-id="<?php echo $center->id?>"
                             data-target-url="<?php echo $this->createUrl('fees/physicians')?>"
+                            data-contact-url="<?php echo $this->createUrl('providers/contact')?>"
                             data-cpt-id="<?php echo $center->cpt ?>"
                             data-loaded="0">
                             <td style="height: 44px;" class="text-center">
                                 <i class="call-to-action theme fa fa-plus-circle fa-2x"></i>
                                 <i class="rev-call-to-action theme fa fa-minus-circle fa-2x"></i>
                             </td>
-                            <td data-title="Facility"><?php echo $center->name?></td>
+                            <td data-title="Facility">
+                                <a class="theme" href="<?php echo $this->createUrl('providers/details?id='.$center->id)?>" class="js-center-details">
+                                    <?php echo $center->name?>
+                                </a>
+                            </td>
                             <td data-title="Location"><?php echo $center->addrRoad?></td>
                             <td class="text-center" data-title="Your Price">
                                 <div class="price-info">
@@ -74,7 +79,7 @@
                                 <?php } ?>
                                 </div>
                             </td>
-                            <td data-title=""><button type="button" class="btn btn-theme">Contact provider</button></td>
+                            <td data-title=""><button type="button" class="btn btn-theme js-contact-provider">Contact provider</button></td>
                         </tr>
                     <?php } ?>
                     </tbody>

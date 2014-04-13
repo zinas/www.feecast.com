@@ -43,7 +43,7 @@ class Patient extends CActiveRecord
 			'appointments' => array(self::HAS_MANY, 'Appointment', 'patient'),
 			'messages' => array(self::HAS_MANY, 'CenterMsg', 'patient'),
 			'centerReviews' => array(self::HAS_MANY, 'CenterReview', 'user'),
-			'insurance' => array(self::BELONGS_TO, 'InsuranceProvider', 'patInsurance'),
+			'ins' => array(self::BELONGS_TO, 'InsuranceProvider', array('patInsurance'=>'id') ),
 			'plan' => array(self::BELONGS_TO, 'InsurancePlan', 'patInsPlan'),
 			'physicianReviews' => array(self::HAS_MANY, 'PhysicianReview', 'user'),
 			'searchHistories' => array(self::HAS_MANY, 'SearchHistory', 'user'),

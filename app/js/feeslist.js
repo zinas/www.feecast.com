@@ -42,6 +42,9 @@
         }
     } );
 
+    $('.js-center-details').on('click', function (event) {
+      event.stopPropagation();
+    });
 
     function _renderPhysicians(physicians) {
       var result='', p, i, template =
@@ -59,7 +62,7 @@
       for (i=0; i<physicians.length; i++) {
         p = template
               .replace("__name__", physicians[i].physician)
-              .replace("__id__", physicians[i].feeId)
+              .replace("__id__", physicians[i].physicianId)
               .replace("__price__", physicians[i].price);
 
         result += p;
@@ -69,7 +72,19 @@
 
 
     $('.my-slider').slider();
-    $('.contact').on('click', function (event) { event.stopPropagation(); });
+    $('.js-contact-provider').on('click', function (event) {
+      event.stopPropagation();
+      var $details, $tr, center, cpt, physician = null, url;
+
+      $tr = $(this).parents('tr');
+      url = $tr.data('contact-url')+'?center='+$tr.data('center-id')+'&cpt='+$tr.data('cpt-id');
+      $details  = $tr.next('tr').find('.details');
+      if ($details.length) {
+        url += '&physician='+$details.find('[name="optionsRadios"]:checked').val();
+      }
+
+      window.location.href = url;
+    });
 
 
     $('.insurance-carrier').on('change', function (event) {

@@ -1,10 +1,10 @@
 <div
     class="center-background"
-    style="background-image: url(<?php echo Yii::app()->baseUrl?>/images/content/center-backgrounds/<?php echo $center->id?>.png)"
+    style="background-image: url(<?php echo $center->cover?>)"
 >
     <div
         class="center-logo content-panel"
-    style="background-image: url(<?php echo Yii::app()->baseUrl?>/images/content/center-logos/<?php echo $center->id?>.png)"
+    style="background-image: url(<?php echo $center->icon?>)"
     ></div>
 </div>
 

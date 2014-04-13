@@ -119,4 +119,28 @@ class Center extends CActiveRecord
 	public function getMaxTotal() {
 		return $this->center_patient_price + $this->center_insurance_price + $this->max_physician_price;
 	}
+
+	public function getCover() {
+		if (is_file(Yii::getPathOfAlias('webroot.images.content.center-backgrounds').DIRECTORY_SEPARATOR.$this->id.'.jpg')) {
+			return Yii::app()->baseUrl.'/images/content/center-backgrounds/'.$this->id.'.jpg';
+		} else {
+			return self::getDefaultCover();
+		}
+	}
+
+	public static function getDefaultCover() {
+		return Yii::app()->baseUrl.'/images/content/center-backgrounds/0.jpg';
+	}
+
+	public function getIcon() {
+		if (is_file(Yii::getPathOfAlias('webroot.images.content.center-logos').DIRECTORY_SEPARATOR.$this->id.'.png')) {
+			return Yii::app()->baseUrl.'/images/content/center-logos/'.$this->id.'.png';
+		} else {
+			return self::getDefaultIcon();
+		}
+	}
+
+	public static function getDefaultIcon() {
+		return Yii::app()->baseUrl.'/images/content/center-logos/0.png';
+	}
 }

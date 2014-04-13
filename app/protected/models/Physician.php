@@ -89,4 +89,16 @@ class Physician extends CActiveRecord
 
 		return implode(', ', $specs);
 	}
+
+	public function getImage() {
+		if (is_file(Yii::getPathOfAlias('webroot.images.content.physician-photos').DIRECTORY_SEPARATOR.$this->id.'.jpg')) {
+			return Yii::app()->baseUrl.'/images/content/physician-photos/'.$this->id.'.jpg';
+		} else {
+			return self::getDefaultImage();
+		}
+	}
+
+	public static function getDefaultImage() {
+		return Yii::app()->baseUrl.'/images/content/physician-photos/0.jpg';
+	}
 }
