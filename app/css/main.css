@@ -118,10 +118,15 @@
 .content-panel .adv-table {margin: 10px;}
 #fees-list tr,
 #fees-list td {
-  cursor: pointer;
   vertical-align: middle;
   position: relative;
 }
+
+#fees-list.has-insurance-info tr,
+#fees-list.has-insurance-info td {
+  cursor: pointer;
+}
+
 #fees-list h2 {margin-left: 10px;}
 #fees-list .call-to-action,
 #fees-list .rev-call-to-action {
@@ -133,7 +138,7 @@
 #fees-list .opened .rev-call-to-action {
   display: block;
 }
-#fees-list tr:hover .call-to-action {
+#fees-list.has-insurance-info tr:hover .call-to-action {
   display: block;
 }
 
@@ -321,3 +326,11 @@ box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
 }
 
 .shift-left {margin-right: 10px; margin-left: -10px;}
+
+#insurance-info-modal .modal-dialog{
+  width: 400px;
+}
+
+#insurance-info-modal .form-login {
+  max-width: 1000px;
+}

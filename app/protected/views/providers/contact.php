@@ -48,7 +48,12 @@
                 <div class="col-sm-4 insurance-info">
                     <h4>Your Insurance Info</h4>
                     <?php if (Yii::app()->user->isGuest) { ?>
-
+                        <label>Insurance Provider</label>
+                        <p><?php echo Yii::app()->user->insuranceProvider->insName?></p>
+                        <label>Insurance Plan</label>
+                        <p><?php echo Yii::app()->user->insurancePlan->planName?></p>
+                        <label>Policy Number</label>
+                        <p><?php echo Yii::app()->session['insurance-info']['policy-number']?></p>
                     <?php } else { ?>
                         <label>Insurance Provider</label>
                         <p><?php echo Yii::app()->user->patient->ins->insName?></p>

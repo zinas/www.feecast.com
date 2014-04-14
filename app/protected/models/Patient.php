@@ -98,6 +98,6 @@ class Patient extends CActiveRecord
      * @return boolean
      */
     public function getHasInsuranceInfo() {
-        return true;
+        return !is_null($this->patPolicyNum)||(!is_null($this->patInsurance)&&!is_null($this->patInsPlan));
     }
 }

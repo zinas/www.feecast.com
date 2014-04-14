@@ -34,14 +34,16 @@
                 <h4 class="theme"><?php echo $term?></h4>
             </div>
             <div class="adv-table">
-                <table cellpadding="0" cellspacing="0" border="0" class="table cf" id="fees-list">
+                <table cellpadding="0" cellspacing="0" border="0" class="table cf <?php echo Yii::app()->user->hasInsuranceInfo?'has-insurance-info':''?>" id="fees-list">
                     <thead class="cf">
                         <tr>
                             <th style="min-width: 40px;"></th>
                             <th>Facility</th>
                             <th>Location</th>
                             <th class="text-center">Total Cost</th>
+                            <?php if (Yii::app()->user->hasInsuranceInfo) { ?>
                             <th></th>
+                            <?php } ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -69,9 +71,9 @@
                                         <?php echo _::currency($center->minTotal).' - '._::currency($center->maxTotal)?>
                                     </span>
                                 <?php } else { ?>
-                                    <button class="btn btn-default">Get your price</button>
+                                    <a class="btn btn-default" data-toggle="modal" href="#insurance-info-modal">Get your price</a>
                                     <?php /*
-                                    <a data-toggle="modal" href="#insurance-info-modal">Enter insurance info</a>
+
                                     <?php if (Yii::app()->user->isGuest) { ?>
                                         <p style="margin:0; padding: 0;">or</p> <a data-toggle="modal" href="#login-form-modal">login</a>
                                     <?php } ?>
@@ -79,7 +81,9 @@
                                 <?php } ?>
                                 </div>
                             </td>
+                            <?php if (Yii::app()->user->hasInsuranceInfo) { ?>
                             <td data-title=""><button type="button" class="btn btn-theme js-contact-provider">Contact provider</button></td>
+                            <?php } ?>
                         </tr>
                     <?php } ?>
                     </tbody>
@@ -144,14 +148,14 @@
 <!-- modal for insurance info -->
 
 <div class="modal fade login-modal " id="insurance-info-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog">
     <div class="modal-content">
 <div id="login-page">
 <form class="form-login" method="POST" action="<?php echo Yii::app()->createUrl('fees/list') ?>">
     <input type="hidden" name="search-need" value="<?php echo $term ?>">
   <h2 class="form-login-heading">fill in your insurance info</h2>
   <div class="login-wrap">
-        <label>Choose insurance carrier</label>
+        <label>Choose insurance carrier</label><br>
         <select name="carrier" class="insurance-carrier" data-target-url="<?php echo $this->createUrl('fees/plans')?>">
             <option value="-1">Select one...</option>
             <?php foreach ($providers as $provider) { ?>
@@ -160,11 +164,11 @@
         </select>
         <div class="insurance-options hidden">
       <hr>
-        <label>Select plan</label>
+        <label>Select plan</label><br>
         <div class="plans-placeholder"></div>
         <br><br><strong>OR</strong><br><br>
       <label>Enter your policy number</label>
-      <input type="text" class="form-control" name="password" placeholder="Policy number">
+      <input type="text" class="form-control" name="policy-number" placeholder="Policy number">
       <br>
       <button class="btn btn-theme btn-block" type="submit">See your personal price!</button>
     </div>

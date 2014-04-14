@@ -25,8 +25,8 @@
         <script>
             var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>";
             var user = {
-                id: <?php echo Yii::app()->user->id?>,
-                hasInsuranceInfo: <?php echo Yii::app()->user->hasInsuranceInfo?>
+                id: <?php echo Yii::app()->user->id?Yii::app()->user->id:'0'?>,
+                hasInsuranceInfo: <?php echo Yii::app()->user->hasInsuranceInfo?'true':'false'?>
             };
         </script>
     </head>

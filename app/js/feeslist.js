@@ -7,10 +7,7 @@
         bPaginate: false
     });
 
-  $('#fees-list').on('click', 'tbody tr.odd, tbody tr.even', function () {
-        if (!user.hasInsuranceInfo) {
-          return false;
-        }
+  $('#fees-list.has-insurance-info').on('click', 'tbody tr.odd, tbody tr.even', function () {
         var nTr = $(this)[0],
             $tr = $(this),
             loaded = $(this).data('loaded')=="1"?true:false;

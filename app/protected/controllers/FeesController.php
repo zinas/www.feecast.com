@@ -19,6 +19,19 @@ class FeesController extends Controller
         $location = Yii::app()->request->getParam('search-location')?Yii::app()->request->getParam('search-location'):'Chicago';
         $cpt = _::parseCpt($term);
 
+        if (Yii::app()->request->getParam('carrier')) {
+            if (Yii::app()->user->isGuest) {
+                Yii::app()->session['insurance-info'] = array(
+                    'carrier' => Yii::app()->request->getParam('carrier'),
+                    'plan' => Yii::app()->request->getParam('plan'),
+                    'policy-number' => Yii::app()->request->getParam('policy-number')
+                );
+            } else {
+                // Update Patient Info
+            }
+        }
+
+
         // TODO: Add location
         $centers = Center::model()
             ->with(array(
