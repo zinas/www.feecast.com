@@ -20,7 +20,7 @@ class FeesController extends Controller
         $cpt = _::parseCpt($term);
 
         if (Yii::app()->request->getParam('carrier')) {
-            if (Yii::app()->user->isGuest) {
+            if (Yii::app()->user->isGuest || Yii::app()->user->isPracticioner) {
                 Yii::app()->session['insurance-info'] = array(
                     'carrier' => Yii::app()->request->getParam('carrier'),
                     'plan' => Yii::app()->request->getParam('plan'),

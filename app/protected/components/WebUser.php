@@ -1,7 +1,7 @@
 <?php
 class WebUser extends CWebUser {
     public function getHasInsuranceInfo() {
-        if (Yii::app()->user->isGuest) {
+        if (Yii::app()->user->isGuest || $this->isPracticioner) {
             if (is_array(Yii::app()->session['insurance-info'])) {
                 if (Yii::app()->session['insurance-info']['policy-number'])
                     return true;
@@ -26,6 +26,10 @@ class WebUser extends CWebUser {
             return null;
 
         return InsurancePlan::model()->findByPk(Yii::app()->session['insurance-info']['plan']);
+    }
+
+    public function getIsPracticioner() {
+        return $this->id == Yii::app()->params['practicioner-id'];
     }
 }
 ?>

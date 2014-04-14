@@ -71,13 +71,7 @@
                                         <?php echo _::currency($center->minTotal).' - '._::currency($center->maxTotal)?>
                                     </span>
                                 <?php } else { ?>
-                                    <a class="btn btn-default" data-toggle="modal" href="#insurance-info-modal">Get your price</a>
-                                    <?php /*
-
-                                    <?php if (Yii::app()->user->isGuest) { ?>
-                                        <p style="margin:0; padding: 0;">or</p> <a data-toggle="modal" href="#login-form-modal">login</a>
-                                    <?php } ?>
-                                    */ ?>
+                                    <a class="btn btn-default" data-toggle="modal" href="#insurance-info-modal"><?php echo Yii::app()->user->isPracticioner?'Get patient price':'Get your price'?></a>
                                 <?php } ?>
                                 </div>
                             </td>
@@ -89,6 +83,12 @@
                     </tbody>
                 </table>
             </div>
+            <?php if (Yii::app()->user->isPracticioner && Yii::app()->user->hasInsuranceInfo) { ?>
+            <div class="clearfix">
+                <a href="#" style="margin-right: 15px; margin-bottom: 10px;" class="btn btn-default pull-right">E-mail List</a>
+                <a data-toggle="modal" href="#insurance-info-modal" style="margin-right: 15px; margin-bottom: 10px;" class="btn btn-default pull-right">Change Insurance Info</a>
+            </div>
+            <?php } ?>
         </div>
     </div>
     <div class="col-sm-3">
