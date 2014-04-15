@@ -20,11 +20,13 @@ class ProvidersController extends Controller
             $physicianPrice = '';
         }
 
+        $centerPricings = $center->pricings(array('condition'=>'cpt='.$cpt->id));
+
         $this->render('contact', array(
             'center' => $center,
             'physician' => $physician,
             'cpt' => $cpt,
-            'centerPrice' => $center->pricings(array('condition'=>'cpt='.$cpt->id))[0]->pricePatient,
+            'centerPrice' => $centerPricings[0]->pricePatient,
             'physicianPrice' => $physicianPrice,
             'selectedPhysician'=>$selectedPhysician
         ));
