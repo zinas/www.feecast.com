@@ -57,7 +57,7 @@ with open(cname,"r") as datfile:
                     # State, [3]
                     # Phone, [5]
                     login = 'MRICA' + str(cnt)
-                    phone = re.sub("[^0-9]", "", row[5])		    
+                    phone = re.sub("[^0-9]", "", row[5]) 
                     print cnt, '|', cnt, '|', login, '|', login, '|', row[0], '|', row[1], '|', row[2], '|CA|', row[4], '|', phone
                     #expire = time.strptime(row[7], "%m/%d/%y")
                     dataCenter = (cnt,cnt,login,login,row[0],row[1],row[2],'CA',row[4],phone)
