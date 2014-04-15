@@ -14,7 +14,8 @@ class ProvidersController extends Controller
 
 
         if ($selectedPhysician) {
-            $physicianPrice = $physician->physPricings(array('condition'=>'cpt='.$cpt->id.' AND center='.$center->id))[0]->price;
+            $physicianPrices = $physician->physPricings(array('condition'=>'cpt='.$cpt->id.' AND center='.$center->id));
+            $physicianPrice = $physicianPrices[0]->price;
         } else {
             $physicianPrice = '';
         }
