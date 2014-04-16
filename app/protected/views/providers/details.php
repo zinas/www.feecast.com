@@ -15,7 +15,7 @@
               <strong><?php echo $center->name?></strong><br>
               <?php echo $center->addrRoad?><br>
               <?php echo $center->addrCity?>, <?php echo $center->addrState?> <?php echo $center->addrZip?><br>
-              <abbr title="Phone">P:</abbr> <?php echo $center->phone?>
+              <abbr title="Phone">P:</abbr> <?php echo $center->centPhone?>
             </address>
 
             <address>
