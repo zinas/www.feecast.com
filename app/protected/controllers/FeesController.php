@@ -106,16 +106,22 @@ class FeesController extends Controller
 
         $result = array();
 
+        $center = Center::model()->findByPk($center_id);
+        $centerPricings = $center->pricings(array('condition'=>'cpt='.$cpt_id));
+
 
         foreach ($fees as $fee) {
             $result[] = array(
                 'physicianId' => $fee->physician,
-                'physician' => $fee->_physician->title,
-                'price' => _::currency($fee->price)
+                'physician' => $fee->_physician,
+                'price' => _::currency($fee->price+$centerPricings[0]->pricePatient+$centerPricings[0]->priceIns),
+                'pPrice' => _::currency($fee->price),
+                'cPrice' => _::currency($centerPricings[0]->pricePatient),
+                'iPrice' => _::currency($centerPricings[0]->priceIns),
             );
         }
 
-        $this->renderJSON($result);
+        $this->renderPartial('physicians', array('results'=>$result));
     }
 
     public function actionTest() {

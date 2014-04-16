@@ -21,16 +21,30 @@
         else
         {
             $(this).addClass('opened');
-            if (!loaded) {
+            if (true||!loaded) {
               oTable.fnOpen( nTr, '<div class="loader"></div>', 'details' );
               $.ajax({
                 url: $tr.data('target-url'),
                 data: {center_id:$tr.data('center-id'), cpt_id:$tr.data('cpt-id')},
                 success: function (data) {
-                  $tr.physicians=data;
-                  $tr.data('physicians', data);
-                  $tr.data('loaded', '1');
-                  $tr.next('tr').find('.details').html(_renderPhysicians($tr.physicians));
+                  // $tr.physicians=data;
+                  // $tr.data('physicians', data);
+                  // $tr.data('loaded', '1');
+                  // $tr.next('tr').find('.details').html(_renderPhysicians($tr.physicians));
+                  $tr.next('tr').find('.details').html(data);
+
+                  $tr.next('tr').find('.details .hoverable').popover({
+                      trigger: 'hover',
+                      delay: 400,
+                      html: true,  // must have if HTML is contained in popover
+
+                      content: function() {
+                        return $('#popover-'+$(this).data('id')).html();
+                      },
+                      container: 'body',
+                      placement: 'top'
+
+                  });
                 }
               });
             } else {

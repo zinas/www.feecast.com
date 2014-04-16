@@ -14,6 +14,8 @@
   padding-top: 30px;
 }
 
+html .popover {max-width: 1000px;}
+
 .main-search-form .pn {height: auto; max-width: 720px; margin: 0 auto;}
 .main-search-form .search-text {width: 80%; margin: 0 auto;}
 .main-search-form h3 {margin: 10px 0;}
