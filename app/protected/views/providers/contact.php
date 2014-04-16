@@ -1,5 +1,5 @@
 <div class="row provider-contact">
-    <div class="col-xs-9">
+    <div class="col-xs-12">
         <div class="row">
             <div class="col-xs-4">
                 <div class="content-panel medical-center pn">
@@ -108,7 +108,7 @@
             <button type="button" class="btn btn-primary btn-lg btn-block mt">Submit</button>
         </div>
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-3 hidden">
         <div class="white-panel pn">
             <div class="white-header"><h5>What happens next?</h5></div>
             <p>FeeCast will send your request to the provider and you will receive a confirmation for the appointment. The provider may need additional information, in which case we will contact you with some questions prior to confirming the appointment.</p>

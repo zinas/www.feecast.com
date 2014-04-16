@@ -125,7 +125,7 @@
                         </div>
                         <div class="media-body">
                             <h5>Hospitals</h5>
-                            <p class="discreet">Not implented yet</p>
+                            <p><?php echo _::currency(1.5*$summary['min_price']) . ' - ' . _::currency(1.5*$summary['max_price'])?></p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="media-body">
                             <h5>Providers in other areas</h5>
-                            <p class="discreet">Not implented yet</p>
+                            <p><?php echo _::currency(0.83*$summary['min_price']) . ' - ' . _::currency(0.85*$summary['max_price'])?></p>
                         </div>
                     </div>
                 </div>
