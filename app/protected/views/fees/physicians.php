@@ -30,8 +30,8 @@
                     <h6>Physician</h6>
                     <h4><?php echo $result['cPrice'] ?></h4>
                     <h6>Facility</h6>
-                    <h4><?php echo $result['iPrice'] ?></h4>
-                    <h6>Other expenses</h6>
+                    <h4 style="color: #999"><?php echo $result['iPrice'] ?></h4>
+                    <h6>Paid by insurance</h6>
                 </div>
             </div>
 
