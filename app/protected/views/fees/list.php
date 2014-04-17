@@ -63,7 +63,7 @@
                                     <?php echo $center->name?>
                                 </a>
                             </td>
-                            <td data-title="Location"><?php echo $center->addrRoad?></td>
+                            <td data-title="Location"><?php echo $center->addrCity?></td>
                             <td class="text-center" data-title="Your Price">
                                 <div class="price-info">
                                 <?php if (Yii::app()->user->hasInsuranceInfo) { ?>

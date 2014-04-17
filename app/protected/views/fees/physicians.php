@@ -1,9 +1,9 @@
-<?php foreach ($results as $result) { $physician = $result['physician']; ?>
+<?php $i=0; foreach ($results as $result) { $physician = $result['physician']; ?>
 <div class="hoverable" data-id="<?php echo $result['physicianId']?>">
     <div class="row">
         <div class="col-sm-4 radio">
             <label>
-                <input type="radio" name="optionsRadios" value="<?php echo $result['physicianId']?>" checked>
+                <input type="radio" <?php echo $i===0?' CHECKED ':''?>name="optionsRadios" value="<?php echo $result['physicianId']?>">
                 <strong><?php echo $physician->title?></strong>
             </label>
         </div>
@@ -49,4 +49,4 @@
         </div>
     </div>
 </div>
-<?php } ?>
+<?php $i++; } ?>
