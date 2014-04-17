@@ -16,9 +16,6 @@ class FeesController extends Controller
 
     public function actionList() {
         $term = Yii::app()->searchState->getParam('search-need');
-        $location = Yii::app()->request->getParam('search-location')?Yii::app()->request->getParam('search-location'):'Chicago';
-        $cpt = _::parseCpt($term);
-
         if (Yii::app()->request->getParam('carrier')) {
             if (Yii::app()->user->isGuest || Yii::app()->user->isPracticioner) {
                 Yii::app()->session['insurance-info'] = array(
@@ -31,6 +28,11 @@ class FeesController extends Controller
             }
         }
 
+        if (isset($_POST['search-need'])) {
+            $this->redirect(array('fees/list'));
+        }
+        $location = Yii::app()->request->getParam('search-location')?Yii::app()->request->getParam('search-location'):'Chicago';
+        $cpt = _::parseCpt($term);
 
         // TODO: Add location
         $centers = Center::model()

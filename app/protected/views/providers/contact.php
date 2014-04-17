@@ -49,18 +49,18 @@
                     <h4>Your Insurance Info</h4>
                     <?php if (Yii::app()->user->isGuest) { ?>
                         <label>Insurance Provider</label>
-                        <p><?php echo Yii::app()->user->insuranceProvider->insName?></p>
+                        <p><?php echo isset(Yii::app()->user->insuranceProvider->insName)?Yii::app()->user->insuranceProvider->insName:''?></p>
                         <label>Insurance Plan</label>
-                        <p><?php echo Yii::app()->user->insurancePlan->planName?></p>
+                        <p><?php echo isset(Yii::app()->user->insurancePlan->planName)?Yii::app()->user->insurancePlan->planName:''?></p>
                         <label>Policy Number</label>
-                        <p><?php echo Yii::app()->session['insurance-info']['policy-number']?></p>
+                        <p><?php echo isset(Yii::app()->session['insurance-info']['policy-number'])?Yii::app()->session['insurance-info']['policy-number']:''?></p>
                     <?php } else { ?>
                         <label>Insurance Provider</label>
-                        <p><?php echo Yii::app()->user->patient->ins->insName?></p>
+                        <p><?php echo isset(Yii::app()->user->patient->ins->insName)?Yii::app()->user->patient->ins->insName:''?></p>
                         <label>Insurance Plan</label>
-                        <p><?php echo Yii::app()->user->patient->plan->planName?></p>
+                        <p><?php echo isset(Yii::app()->user->patient->plan->planName)?Yii::app()->user->patient->plan->planName:''?></p>
                         <label>Policy Number</label>
-                        <p><?php echo Yii::app()->user->patient->patPolicyNum?></p>
+                        <p><?php echo isset(Yii::app()->user->patient->patPolicyNum)?Yii::app()->user->patient->patPolicyNum:''?></p>
                     <?php } ?>
                 </div>
 
