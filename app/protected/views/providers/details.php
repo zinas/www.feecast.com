@@ -51,14 +51,14 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6 text-center">
                     <h1 class="rating-num">
-                        4.3</h1>
+                        3.9</h1>
                     <div class="rating">
                         <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
                         </span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
                         </span><span class="glyphicon glyphicon-star-empty"></span>
                     </div>
                     <div>
-                        <span class="glyphicon glyphicon-user"></span>1,050,008 total
+                        <span class="glyphicon glyphicon-user"></span>155 total
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 shift-left">

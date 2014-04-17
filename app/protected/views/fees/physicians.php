@@ -43,7 +43,7 @@
                     </span><span class="glyphicon glyphicon-star-empty"></span>
                 </div>
                 <div>
-                    <span class="glyphicon glyphicon-user"></span>1,050,008 total
+                    <span class="glyphicon glyphicon-user"></span>78 total
                 </div>
             </div>
         </div>

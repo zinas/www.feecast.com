@@ -27,6 +27,7 @@ class ProvidersController extends Controller
             'physician' => $physician,
             'cpt' => $cpt,
             'centerPrice' => $centerPricings[0]->pricePatient,
+            'centerPriceIns' => $centerPricings[0]->priceIns,
             'physicianPrice' => $physicianPrice,
             'selectedPhysician'=>$selectedPhysician
         ));
