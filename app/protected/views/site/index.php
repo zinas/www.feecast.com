@@ -17,7 +17,7 @@
             <div data-toggle="tooltip" title="Spine" class="body-point body-point-10" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
             <div data-toggle="tooltip" title="Elbow" class="body-point body-point-11" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
             <div data-toggle="tooltip" title="Hip" class="body-point body-point-12" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
-            <div data-toggle="tooltip" title="Wrist / Hand" class="body-point body-point-13" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
+            <div data-toggle="tooltip" title="Wrist / Hand" class="body-point body-point-13" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="CARPAL TUNNEL SURGERY (64721)"></div>
             <div data-toggle="tooltip" title="Ankle" class="body-point body-point-14" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
             <div data-toggle="tooltip" title="Nose" class="body-point body-point-15" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
             <div data-toggle="tooltip" title="Eye" class="body-point body-point-16" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="PUNCTURE DRAINAGE OF LESION (10160)"></div>
