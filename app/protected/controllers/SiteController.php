@@ -28,6 +28,7 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+		Yii::app()->session['insurance-info'] = null;
 		$this->layout = '//layouts/bootstrap-single-column';
 		$this->render('index');
 	}
