@@ -78,7 +78,8 @@ class Physician extends CActiveRecord
 	}
 
 	public function getTitle() {
-		return $this->phyName.' '.$this->phyFamName.', '.$this->phyTitle;
+		return 'Dr. '.$this->phyName.' '.$this->phyFamName;
+		// .$this->phyTitle;
 	}
 
 	public function getSpecialtiesTitle() {
