@@ -51,8 +51,8 @@ class FeesController extends Controller
                     pricings.priceIns AS center_insurance_price,
                     MIN(physicianPrices.price) AS min_physician_price,
                     MAX(physicianPrices.price) AS max_physician_price,
-                    (pricings.pricePatient + pricings.priceIns + MIN(physicianPrices.price)) AS center_total_price,
-                    (pricings.pricePatient + pricings.priceIns + MAX(physicianPrices.price)) AS center_total_price_max,
+                    (pricings.pricePatient +  MIN(physicianPrices.price)) AS center_total_price,
+                    (pricings.pricePatient +  MAX(physicianPrices.price)) AS center_total_price_max,
                     pricings.cpt as cpt
                 ',
                 'order' => 'center_total_price ASC',
@@ -116,7 +116,7 @@ class FeesController extends Controller
             $result[] = array(
                 'physicianId' => $fee->physician,
                 'physician' => $fee->_physician,
-                'price' => _::currency($fee->price+$centerPricings[0]->pricePatient+$centerPricings[0]->priceIns),
+                'price' => _::currency($fee->price+$centerPricings[0]->pricePatient),
                 'pPrice' => _::currency($fee->price),
                 'cPrice' => _::currency($centerPricings[0]->pricePatient),
                 'iPrice' => _::currency($centerPricings[0]->priceIns),

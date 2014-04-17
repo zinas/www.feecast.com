@@ -113,11 +113,11 @@ class Center extends CActiveRecord
 	}
 
 	public function getMinTotal() {
-		return $this->center_patient_price + $this->center_insurance_price + $this->min_physician_price;
+		return $this->center_patient_price + $this->min_physician_price;
 	}
 
 	public function getMaxTotal() {
-		return $this->center_patient_price + $this->center_insurance_price + $this->max_physician_price;
+		return $this->center_patient_price + $this->max_physician_price;
 	}
 
 	public function getCover() {

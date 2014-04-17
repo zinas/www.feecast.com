@@ -6,6 +6,6 @@ class _ {
     }
 
     public  static function currency($val) {
-        return Yii::app()->numberFormatter->formatCurrency($val, 'USD');
+        return Yii::app()->numberFormatter->formatCurrency(round($val), 'USD');
     }
 }
