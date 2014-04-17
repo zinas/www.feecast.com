@@ -143,4 +143,14 @@ class Center extends CActiveRecord
 	public static function getDefaultIcon() {
 		return Yii::app()->baseUrl.'/images/content/center-logos/0.png';
 	}
+
+	public function getAbout() {
+		return $this->name . ': '. $this->centDesc;
+	}
+
+	public function getMap() {
+		//$searchTerm = str_replace(" ", "+", $this->name);
+		return "https://www.google.com/maps/embed/v1/place?key=AIzaSyChG2RPGnlw3qWMfpnxvbX-HhpgOkATNew&q=".$this->name;
+		//return "https://www.google.com/maps/embed/v1/place?key=AIzaSyChG2RPGnlw3qWMfpnxvbX-HhpgOkATNew&q=Space+Needle,Seattle+WA";
+	}
 }

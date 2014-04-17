@@ -36,7 +36,7 @@
                             <h4><?php echo _::currency($centerPrice) ?></h4>
                             <h6>Facility</h6>
                             <h4 style="color: #999"><?php echo _::currency($centerPriceIns) ?></h4>
-                            <h6>Other expenses</h6>
+                            <h6>Paid by insurance</h6>
                         </div>
                     </div>
                 </div>

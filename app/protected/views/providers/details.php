@@ -40,7 +40,7 @@
     <div class="col-sm-6">
         <div class="content-panel" style="padding:0;">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11864.9133739368!2d-87.74916982110798!3d41.973906946003964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc2660b104c7%3A0xd440f23e819b62a5!2s5086+N+Elston+Ave!5e0!3m2!1sen!2s!4v1397326034886"
+                src="<?php echo $center->map ?>"
                 height="350"
                 frameborder="0"
                 style="width: 100%"
