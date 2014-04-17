@@ -30,8 +30,7 @@
 
             <address>
               <strong>About</strong>
-              <p>Albany Medical Center is northeastern New York’s only academic health sciences center and is one of the largest private employers in the Capital Region.</p>
-              <p>It incorporates the 734-bed Albany Medical Center Hospital, which offers the widest range of medical and surgical services in the region, and the Albany Medical College, which trains the next generation of doctors, scientists and other healthcare professionals, and which also includes a biomedical research enterprise and the region’s largest physicians practice with 425 doctors. Albany Medical Center works with dozens of community partners to improve the region’s health and quality of life.</p>
+              <p><?php echo $center->about ?>
             </address>
 
             <button class="btn btn-block btn-primary" style="">Contact</button>
