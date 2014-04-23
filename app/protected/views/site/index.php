@@ -13,7 +13,7 @@
             <div data-toggle="tooltip" title="Urology" class="body-point body-point-6" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="UROLOGY SURGERY PROCEDURE (53899)"></div>
             <div data-toggle="tooltip" title="Knee" class="body-point body-point-7" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="REVISE KNEECAP (27437)"></div>
             <div data-toggle="tooltip" title="Foot and Angle" class="body-point body-point-8" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="INCISION OF FOOT FASCIA (28008)"></div>
-            
+
             <div data-toggle="tooltip" title="Neck" class="body-point body-point-9" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="MUSCLE-SKIN GRAFT, HEAD/NECK (15732)"></div>
             <div data-toggle="tooltip" title="Spine" class="body-point body-point-10" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="TREAT SPINE PROCESS FRACTURE (22305)"></div>
             <div data-toggle="tooltip" title="Elbow" class="body-point body-point-11" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="EXPLORATORY ELBOW SURGERY (24000)"></div>
@@ -25,7 +25,7 @@
             <div data-toggle="tooltip" title="Eye" class="body-point body-point-16" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="EXPLORE/BIOPSY EYE SOCKET (67400)"></div>
             <div data-toggle="tooltip" title="Ear" class="body-point body-point-17" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="REMOVE EAR LESION (69540)"></div>
             <div data-toggle="tooltip" title="Throat" class="body-point body-point-18" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="BIOPSY OF THROAT (42800)"></div>
-            
+
             <div data-toggle="tooltip" title="Arthroscopy" class="body-point body-point-19" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="MCP JOINT ARTHROSCOPY, DX (29900)"></div>
             <div data-toggle="tooltip" title="Fractures" class="body-point body-point-20" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="TREAT/GRAFT HEEL FRACTURE (28420)"></div>
             <div data-toggle="tooltip" title="Hardware Removal" class="body-point body-point-21" data-url="<?php echo Yii::app()->createUrl('fees/list') ?>" data-cpt="REMOVAL OF SPINAL LAMINA (63001)"></div>

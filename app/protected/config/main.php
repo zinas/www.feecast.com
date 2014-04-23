@@ -74,6 +74,16 @@ return array(
 				),
 			),
 		),
+	    'smtp'=>array(
+	        'class'=>'application.extensions.smtpmail.PHPMailer',
+	        'Host'=>"smtp.gmail.com",
+	        'Username'=>'zinas.nikos.dev@gmail.com',
+	        'Password'=>'potato1pass',
+	        'Mailer'=>'smtp',
+	        'Port'=>587,
+	        'SMTPAuth'=>true,
+	        'SMTPSecure' => 'tls'
+	    ),
 	),
 
 	// application-level parameters that can be accessed

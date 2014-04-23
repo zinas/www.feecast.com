@@ -329,10 +329,12 @@ box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
 
 .shift-left {margin-right: 10px; margin-left: -10px;}
 
-#insurance-info-modal .modal-dialog{
+#insurance-info-modal .modal-dialog,
+#send-mail-modal .modal-dialog {
   width: 400px;
 }
 
-#insurance-info-modal .form-login {
+#insurance-info-modal .form-login,
+#send-mail-modal .form-login {
   max-width: 1000px;
 }

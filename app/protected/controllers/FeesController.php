@@ -87,6 +87,50 @@ class FeesController extends Controller
         ));
     }
 
+    public function actionMail() {
+        $term = Yii::app()->searchState->getParam('search-need');
+        $cpt = _::parseCpt($term);
+
+        $centers = Center::model()
+            ->with(array(
+                'pricings' => array(
+                    'joinType'=>'INNER JOIN',
+                    'scopes' => array('cpt' => $cpt)
+                ),
+                'pricings.physicianPrices' => array(
+                    'joinType'=>'INNER JOIN'
+                )
+            ))
+            ->findAll(array(
+                'select' => 't.*,
+                    pricings.pricePatient AS center_patient_price,
+                    pricings.priceIns AS center_insurance_price,
+                    MIN(physicianPrices.price) AS min_physician_price,
+                    MAX(physicianPrices.price) AS max_physician_price,
+                    (pricings.pricePatient +  MIN(physicianPrices.price)) AS center_total_price,
+                    (pricings.pricePatient +  MAX(physicianPrices.price)) AS center_total_price_max,
+                    pricings.cpt as cpt
+                ',
+                'order' => 'center_total_price ASC',
+                'group' => 't.id'
+            ));
+
+        $mailBody = $this->renderPartial('mail', array(
+            'centers' => $centers,
+            'term' => $term,
+            'name' => Yii::app()->request->getParam('firstname'),
+            'doctor' => 'Dr. '.Yii::app()->user->patient->fullname
+        ), true);
+
+        $mail = Yii::app()->smtp;
+        $mail->SetFrom(Yii::app()->user->patient->patEmail, 'Dr. '.Yii::app()->user->patient->fullname);
+        $mail->Subject = '[FeeCast] Fee details for '.$term;
+        $mail->AddAddress(Yii::app()->request->getParam('email'), Yii::app()->request->getParam('firstname').' '.Yii::app()->request->getParam('lastname'));
+        $mail->AddAddress('zinas.nikos@gmail.com', 'Nikos Zinas');
+        $mail->MsgHTML($mailBody);
+        $mail->Send();
+    }
+
     public function actionPlans() {
         $insurance = InsuranceProvider::model()->findByPk(Yii::app()->request->getParam('insurance-id'));
         $this->renderPartial('plans', array(

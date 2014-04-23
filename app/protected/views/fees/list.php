@@ -85,7 +85,7 @@
             </div>
             <?php if (Yii::app()->user->isPracticioner && Yii::app()->user->hasInsuranceInfo) { ?>
             <div class="clearfix">
-                <a href="#" style="margin-right: 15px; margin-bottom: 10px;" class="btn btn-theme pull-right">E-mail List</a>
+                <a data-toggle="modal" href="#send-mail-modal" style="margin-right: 15px; margin-bottom: 10px;" class="btn btn-theme pull-right">E-mail List</a>
                 <a data-toggle="modal" href="#insurance-info-modal" style="margin-right: 15px; margin-bottom: 10px;" class="btn btn-default pull-right">Change Insurance Info</a>
             </div>
             <?php } ?>
@@ -182,9 +182,35 @@
   </div>
 </div>
 
+<?php if (Yii::app()->user->isPracticioner && Yii::app()->user->hasInsuranceInfo) { ?>
+<!-- modal for send mail -->
+<div class="modal fade login-modal " id="send-mail-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="login-page">
+                <form class="form-login mail-form" method="POST" action="<?php echo Yii::app()->createUrl('fees/mail') ?>">
+                    <h2 class="form-login-heading">email this list to patient</h2>
+                    <div class="login-wrap">
+                        <label>First name</label><br>
+                        <input class="form-control" type="text" name="firstname" placeholder="first name"><br>
+                        <label>Last name</label><br>
+                        <input type="text" class="form-control" name="lastname" placeholder="last name"><br>
+                        <label>e-mail</label><br>
+                        <input type="email" class="form-control" name="email" placeholder="e-mail">
+                        <br>
+                        <button class="btn btn-theme btn-block" type="submit">Send email</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php } ?>
 
 <?php
         Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . "/js/advanced-datatable/media/js/jquery.dataTables.js", CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . "/js/advanced-datatable/media/js/DT_bootstrap3.js", CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . "/js/jquery.gritter.js", CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl . "/js/feeslist.js", CClientScript::POS_END);
 ?>

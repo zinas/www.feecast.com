@@ -27,10 +27,7 @@
                 url: $tr.data('target-url'),
                 data: {center_id:$tr.data('center-id'), cpt_id:$tr.data('cpt-id')},
                 success: function (data) {
-                  // $tr.physicians=data;
-                  // $tr.data('physicians', data);
-                  // $tr.data('loaded', '1');
-                  // $tr.next('tr').find('.details').html(_renderPhysicians($tr.physicians));
+
                   $tr.next('tr').find('.details').html(data);
 
                   $tr.next('tr').find('.details .hoverable').popover({
@@ -101,12 +98,30 @@
     $('.insurance-carrier').on('change', function (event) {
       $('.insurance-options').addClass('hidden');
       $.ajax({
+        type:"POST",
         url: $(this).data('target-url'),
         data: {"insurance-id":$(this).val()},
         success: function (html) {
           $('.plans-placeholder').html(html);
           $('.insurance-options').removeClass('hidden');
         }
+      });
+    });
+
+    $('.mail-form').on('submit', function (event) {
+      event.preventDefault();
+      $('#send-mail-modal').modal('hide');
+      $.ajax({
+        url : $(this).attr('action'),
+        data: $(this).serialize(),
+      }).then(function (data) {
+        $.gritter.add({
+            // (string | mandatory) the heading of the notification
+            title: 'Your mail has been sent!',
+            // (string | mandatory) the text inside the notification
+            text: 'Your patient will soon receive the list.'
+        });
+
       });
     });
 

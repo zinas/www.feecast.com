@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/table-responsive.css">
 
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/to-do.css">
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery.gritter.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/slider.css">
 
 
