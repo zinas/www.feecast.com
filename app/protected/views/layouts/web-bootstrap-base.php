@@ -12,19 +12,13 @@
 
         <link rel="stylesheet" href="<?=Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
         <link rel="stylesheet" href="<?=Yii::app()->request->baseUrl; ?>/css/theme.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
 
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="<?=Yii::app()->request->baseUrl; ?>/js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
+        <script src="js/vendor/require.js"></script>
+        <script src="js/require/config.js"></script>
     </head>
     <body>
         <?=$content; ?>
+
+        <script src="js/feecast.js"></script>
     </body>
 </html>

@@ -153,7 +153,11 @@
 <div id="login-page">
 <form class="form-login" method="POST" action="<?php echo Yii::app()->createUrl('fees/list') ?>">
     <input type="hidden" name="search-need" value="<?php echo $term ?>">
-  <h2 class="form-login-heading">fill in your insurance info</h2>
+    <?php if (Yii::app()->user->isPracticioner) {?>
+    <h2 class="form-login-heading">fill in patient insurance info</h2>
+  <?php } else { ?>
+      <h2 class="form-login-heading">fill in your insurance info</h2>
+  <?php } ?>
   <div class="login-wrap">
         <label>Choose insurance carrier</label><br>
         <select name="carrier" class="insurance-carrier" data-target-url="<?php echo $this->createUrl('fees/plans')?>">
@@ -166,11 +170,15 @@
       <hr>
         <label>Select plan</label><br>
         <div class="plans-placeholder"></div>
-        <br><br><strong>OR</strong><br><br>
-      <label>Enter your policy number</label>
+        <br><br><br>
+      <label>Enter policy number (mandatory)</label>
       <input type="text" class="form-control" name="policy-number" placeholder="Policy number">
       <br>
+    <?php if (Yii::app()->user->isPracticioner) {?>
+      <button class="btn btn-theme btn-block" type="submit">See prices</button>
+  <?php } else { ?>
       <button class="btn btn-theme btn-block" type="submit">See your personal price!</button>
+  <?php } ?>
     </div>
   </div>
 
