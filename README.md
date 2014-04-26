@@ -1,10 +1,14 @@
-www.feecast.com
-===============
-
+# www.feecast.com
 Healthcare provider fees, at your fingertips
 
+### Requirements
+Node.js (version?)
+lessc compiler (npm install -g less) (version?)
+Apache (version?)
+Mysql (version?)
+PHP (version?)
+Yii Framework (version?)
 
-Installation instructions
-- Fork and clone the repo
-- Go to main.php and change the db entries to match your database credentials
-- base url is: localhost/www.feecast.com/app/site/index
+### Installation instructions
+- Clone repo
+- Create config files from examples

@@ -5,34 +5,24 @@
  * It contains the authentication method that checks if the provided
  * data can identity the user.
  */
-class UserIdentity extends CUserIdentity
-{
-    private $_id;
-
-    public function authenticate()
-    {
-        $record=Patient::model()->findByAttributes(array('patLogin'=>$this->username));
-
-        if($record===null)
+class UserIdentity extends CUserIdentity {
+    /**
+     * Authenticates a user.
+     *
+     * @return boolean whether authentication succeeds.
+     */
+    public function authenticate() {
+        $users=array(
+            // username => password
+            'demo'=>'demo',
+            'admin'=>'admin',
+        );
+        if(!isset($users[$this->username]))
             $this->errorCode=self::ERROR_USERNAME_INVALID;
-        else if($record->patPwd!==$this->password)
+        elseif($users[$this->username]!==$this->password)
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         else
-        {
-            $this->_id=$record->id;
-            $this->setState('fullname', $record->fullname);
-            $this->setState('email', $record->patEmail);
-            $this->setState('username', $record->patLogin);
-            $this->setState('firstName', $record->patName);
-            $this->setState('lastName', $record->patFamName);
-            $this->setState('patient', $record);
             $this->errorCode=self::ERROR_NONE;
-        }
         return !$this->errorCode;
-    }
-
-    public function getId()
-    {
-        return $this->_id;
     }
 }
